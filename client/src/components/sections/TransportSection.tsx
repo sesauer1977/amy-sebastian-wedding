@@ -48,16 +48,16 @@ const transportCards = [
     noteBg: "oklch(0.82 0.05 155)",
   },
   {
-    icon: "🚐",
-    time: "Saturday evening, throughout the night",
-    title: "Cars and Minibuses on Standby",
-    subtitle: "For all guests",
+    icon: "🚕",
+    time: "Saturday evening",
+    title: "Getting Home",
+    subtitle: "For guests not staying at Archerfield",
     colour: "oklch(0.93 0.025 15 / 0.4)",
     textColour: "oklch(0.28 0.06 155)",
     subtitleColour: "oklch(0.62 0.08 15)",
     bodyColour: "oklch(0.45 0.02 80)",
-    body: "Complimentary cars and minibuses will be on standby throughout the evening to shuttle guests from Archerfield to North Berwick town, the surrounding area, and North Berwick train station. There is no need to pre-book. Simply let a member of the team know when you are ready to leave and a vehicle will be arranged for you.",
-    note: "For all guests",
+    body: "If you are not staying at Archerfield, local taxi firms are available for you to book your own transport to your hotel or to North Berwick train station. We recommend booking in advance for the evening of Saturday 8 May. North Berwick Taxis: +44 (0) 1620 893 000.",
+    note: "For guests not staying at Archerfield",
     noteColour: "oklch(0.62 0.08 15)",
     noteBg: "oklch(0.88 0.04 15)",
   },
@@ -198,7 +198,7 @@ export default function TransportSection() {
         >
           <span style={{ fontSize: "1.3rem", flexShrink: 0 }}>💡</span>
           <p style={{ fontFamily: "'Lato', sans-serif", fontSize: "0.88rem", color: "oklch(0.82 0.04 155)", lineHeight: 1.7, margin: 0 }}>
-            <strong style={{ color: "oklch(0.97 0.01 85)" }}>In short:</strong> If you are staying at Archerfield, just get on the coach at 1:15 pm and we will take care of the rest. If you are staying elsewhere, make your own way to the church and coaches will bring everyone to the reception. Taxis home are sorted for the whole evening.
+            <strong style={{ color: "oklch(0.97 0.01 85)" }}>In short:</strong> If you are staying at Archerfield, get on the coach at 1:15 pm. If you are staying elsewhere, make your own way to the church and coaches will bring everyone to the reception. For the journey home, local taxis are available to book directly.
           </p>
         </div>
 

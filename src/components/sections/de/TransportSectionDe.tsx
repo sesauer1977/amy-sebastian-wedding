@@ -42,16 +42,16 @@ const transportCards = [
     noteBg: "oklch(0.82 0.05 155)",
   },
   {
-    icon: "🚐",
-    time: "Samstagabend, die ganze Nacht",
-    title: "Kostenlose Fahrten nach Hause",
-    subtitle: "Für alle Gäste",
+    icon: "🚕",
+    time: "Samstagabend",
+    title: "Heimfahrt",
+    subtitle: "Für Gäste, die nicht in Archerfield übernachten",
     colour: "oklch(0.93 0.025 15 / 0.4)",
     textColour: "oklch(0.28 0.06 155)",
     subtitleColour: "oklch(0.62 0.08 15)",
     bodyColour: "oklch(0.45 0.02 80)",
-    body: "Den ganzen Abend über stehen kostenlose Autos und Kleinbusse bereit, um Gäste von Archerfield nach North Berwick, in die Umgebung und zum Bahnhof North Berwick zu fahren. Keine Voranmeldung nötig. Einfach ein Teammitglied ansprechen, wenn Ihr aufbrechen möchtet.",
-    note: "Für alle Gäste",
+    body: "Wer nicht in Archerfield übernachtet, kann für die Heimfahrt lokale Taxiunternehmen direkt buchen. Wir empfehlen eine Vorabbestellung für den Abend des 8. Mai. North Berwick Taxis: +44 (0) 1620 893 000.",
+    note: "Für Gäste ohne Übernachtung in Archerfield",
     noteColour: "oklch(0.62 0.08 15)",
     noteBg: "oklch(0.88 0.04 15)",
   },
@@ -97,7 +97,7 @@ export default function TransportSectionDe() {
         <div className="fade-in-up" style={{ marginTop: "2rem", background: "oklch(0.28 0.06 155)", borderRadius: "0.5rem", padding: "1.5rem 2rem", display: "flex", gap: "1rem", alignItems: "flex-start" }}>
           <span style={{ fontSize: "1.3rem", flexShrink: 0 }}>💡</span>
           <p style={{ fontFamily: "'Lato', sans-serif", fontSize: "0.88rem", color: "oklch(0.82 0.04 155)", lineHeight: 1.7, margin: 0 }}>
-            <strong style={{ color: "oklch(0.97 0.01 85)" }}>Kurz zusammengefasst:</strong> Wer in Archerfield übernachtet, steigt einfach um 13:15 Uhr in den Bus. Wer woanders übernachtet, fährt selbst zur Kirche. Nach der Trauung bringen Busse alle zum Empfang. Für die Heimfahrt am Abend ist gesorgt.
+            <strong style={{ color: "oklch(0.97 0.01 85)" }}>Kurz zusammengefasst:</strong> Wer in Archerfield übernachtet, steigt einfach um 13:15 Uhr in den Bus. Wer woanders übernachtet, fährt selbst zur Kirche. Nach der Trauung bringen Busse alle zur Hochzeitsfeier. Für die Heimfahrt können lokale Taxis direkt gebucht werden.
           </p>
         </div>
       </div>
