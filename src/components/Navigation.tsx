@@ -11,6 +11,7 @@ const links = [
   { label: "Stay", href: "#accommodation" },
   { label: "Getting Here", href: "#travel" },
   { label: "Guest Info", href: "#guest-info" },
+  { label: "Transport", href: "#transport" },
   { label: "Traditions", href: "#traditions" },
   { label: "East Lothian", href: "#east-lothian" },
   { label: "Contact", href: "#contact" },
