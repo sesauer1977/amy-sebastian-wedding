@@ -225,6 +225,30 @@ export default function AccommodationSection() {
             <div style={{ flex: 1, height: "1px", background: "oklch(0.88 0.02 100)" }} />
           </div>
 
+          {/* Family info */}
+          <div
+            style={{
+              background: "oklch(0.28 0.06 155)",
+              borderRadius: "0.5rem",
+              padding: "1.25rem 1.5rem",
+              marginBottom: "1rem",
+              display: "flex",
+              gap: "1rem",
+              alignItems: "flex-start",
+            }}
+          >
+            <span style={{ fontSize: "1.3rem", flexShrink: 0 }}>👨‍👩‍👧‍👦</span>
+            <div>
+              <p style={{ fontFamily: "'Lato', sans-serif", fontSize: "0.65rem", fontWeight: 700, letterSpacing: "0.15em", textTransform: "uppercase", color: "oklch(0.72 0.06 155)", marginBottom: "0.3rem" }}>
+                Great for Families
+              </p>
+              <p style={{ fontFamily: "'Lato', sans-serif", fontSize: "0.88rem", color: "oklch(0.82 0.04 155)", lineHeight: 1.7, margin: 0 }}>
+                All rooms at Archerfield are generously sized and family-friendly. Children under 12 can sleep in their parents' room on z-beds, and multiple z-beds fit easily in each room. Children aged 12 and over count as adults under Archerfield's terms. The lodges are ideal for sharing between families: a 4-bedroom lodge can comfortably accommodate 3 or even 4 families travelling together, making them excellent value.
+              </p>
+            </div>
+          </div>
+
+          {/* Booking contact */}
           <div
             style={{
               background: "oklch(0.93 0.03 155 / 0.3)",
