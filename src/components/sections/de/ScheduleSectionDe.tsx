@@ -7,14 +7,39 @@ const SectionDivider = ({ label }: { label: string }) => (
 );
 
 const saturdayEvents = [
-  { time: "14:00 Uhr", title: "Trauungszeremonie", description: "Our Lady Star of the Sea, Law Road, North Berwick EH39 4PN. Eine wunderschöne katholische Kirche mit Blick auf die Stadt, gegründet 1879.", icon: "⛪" },
-  { time: "15:30 Uhr", title: "Sektempfang und Häppchen", description: "Nach der Zeremonie fahren wir direkt zum The Waterfront in Archerfield. Stoß mit uns an und feiere mit uns an der Küste von East Lothian.", icon: "🥂" },
-  { time: "19:00 Uhr", title: "Hochzeitsessen", description: "Das Abendessen wird im The Waterfront, Archerfield Estate, Dirleton, East Lothian EH39 5HU serviert.", icon: "🍽" },
+  {
+    time: "14:00 Uhr",
+    title: "Kirchliche Trauung",
+    description: "Our Lady Star of the Sea, Law Road, North Berwick EH39 4PN. Eine wunderschöne katholische Kirche im Herzen von North Berwick, gegründet 1879.",
+    icon: "⛪",
+  },
+  {
+    time: "15:30 Uhr",
+    title: "Sektempfang und Häppchen",
+    description: "Im Anschluss an die Trauung fahren wir direkt zum The Waterfront in Archerfield. Stoßt mit uns an und genießt den Nachmittag an der Küste von East Lothian.",
+    icon: "🥂",
+  },
+  {
+    time: "19:00 Uhr",
+    title: "Hochzeitsessen",
+    description: "Das Abendessen wird im The Waterfront, Archerfield Estate, Dirleton, East Lothian EH39 5HU serviert. Ein Abend voller gutem Essen, Tanzen und Feiern.",
+    icon: "🍽",
+  },
 ];
 
 const sundayEvents = [
-  { time: "Morgens", title: "Sonntagsfrühstück", description: "Ein entspanntes Morgenfrühstück im Archerfield Clubhouse für alle, die sich uns anschließen möchten. Eine schöne Gelegenheit, die Feierlichkeiten fortzusetzen.", icon: "☕" },
-  { time: "Nach dem Frühstück", title: "Auf Wiedersehen", description: "Gute Heimreise. Danke, dass Du Teil unseres Tages warst.", icon: "✈️" },
+  {
+    time: "Morgens",
+    title: "Sonntagsfrühstück",
+    description: "Ein gemütliches Frühstück im Archerfield Clubhouse für alle, die noch dabei sein möchten. Eine schöne Gelegenheit, den Abend ausklingen zu lassen, bevor alle die Heimreise antreten.",
+    icon: "☕",
+  },
+  {
+    time: "Nach dem Frühstück",
+    title: "Auf Wiedersehen",
+    description: "Gute Heimreise. Wir freuen uns riesig, diesen besonderen Tag mit Euch zu feiern.",
+    icon: "✈️",
+  },
 ];
 
 const EventCard = ({ event, delay }: { event: typeof saturdayEvents[0]; delay: number }) => (
@@ -40,7 +65,7 @@ export default function ScheduleSectionDe() {
           <p style={{ fontFamily: "'Lato', sans-serif", fontSize: "0.7rem", fontWeight: 700, letterSpacing: "0.25em", textTransform: "uppercase", color: "oklch(0.62 0.07 155)", marginBottom: "0.75rem" }}>Das Wochenende</p>
           <h2 style={{ fontFamily: "'Cormorant Garamond', serif", fontSize: "clamp(2rem, 5vw, 3rem)", fontWeight: 400, color: "oklch(0.28 0.06 155)", marginBottom: "1rem" }}>Unser Tag</h2>
           <p style={{ fontFamily: "'Lato', sans-serif", fontSize: "0.95rem", color: "oklch(0.45 0.02 80)", maxWidth: "480px", margin: "0 auto", lineHeight: 1.7 }}>
-            Ein Feierlichkeitswochenende an der Küste von East Lothian. Hier findest Du alles, was Du über den Ablauf wissen musst.
+            Ein Wochenende voller Freude an der Küste von East Lothian. Hier findet Ihr alles, was Ihr über den Ablauf wissen müsst.
           </p>
         </div>
         <div className="fade-in-up">

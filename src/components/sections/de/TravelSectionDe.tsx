@@ -5,42 +5,42 @@ const tabs = ["Aus dem Ausland", "Mit dem Zug", "Mit dem Auto", "Taxi / Transfer
 const travelContent = [
   {
     icon: "✈️",
-    intro: "Der nächste internationale Flughafen ist Edinburgh Airport (EDI) mit hervorragenden Verbindungen aus ganz Europa, Nordamerika und darüber hinaus. Von Edinburgh ist das Veranstaltungsgelände ca. 55 bis 65 km östlich.",
+    intro: "Der nächste internationale Flughafen ist Edinburgh Airport (EDI) mit sehr guten Verbindungen aus ganz Europa, Nordamerika und darüber hinaus. Von Edinburgh liegt das Veranstaltungsgelände ca. 55 bis 65 km östlich.",
     steps: [
-      { title: "Flug nach Edinburgh Airport (EDI)", detail: "Edinburgh Airport hat Direktflüge aus den meisten europäischen Großstädten sowie Verbindungen aus Nordamerika und dem Nahen Osten. Airlines wie British Airways, easyJet, Ryanair, KLM, Lufthansa und Emirates bedienen Edinburgh." },
-      { title: "Vom Flughafen nach North Berwick", detail: "Die bequemste Option ist ein Taxi oder Mietwagen direkt zu Deiner Unterkunft (ca. 45 bis 60 Minuten, ca. £50 bis £70). Alternativ: Edinburgh Tram zum Bahnhof Edinburgh Waverley (30 Min.), dann ScotRail nach North Berwick (33 Min.)." },
-      { title: "Von North Berwick nach Archerfield", detail: "Archerfield ist ca. 8 km von North Berwick entfernt. Ein lokales Taxi dauert ca. 10 bis 12 Minuten. Du kannst auch am Flughafen einen Mietwagen nehmen." },
-      { title: "Alternative: Glasgow Airport (GLA)", detail: "Glasgow Airport ist ca. 130 km vom Veranstaltungsort entfernt (1,5 bis 2 Stunden). Von Glasgow empfehlen wir einen Mietwagen oder ein Taxi." },
+      { title: "Flug nach Edinburgh Airport (EDI)", detail: "Edinburgh Airport bietet Direktflüge aus den meisten europäischen Großstädten sowie Verbindungen aus Nordamerika und dem Nahen Osten. Airlines wie British Airways, easyJet, Ryanair, KLM, Lufthansa und Emirates fliegen Edinburgh an." },
+      { title: "Vom Flughafen nach North Berwick", detail: "Am bequemsten ist ein Taxi oder Mietwagen direkt zur Unterkunft (ca. 45 bis 60 Minuten, ca. £50 bis £70). Alternativ: Edinburgh Tram zum Bahnhof Edinburgh Waverley (30 Min.), dann ScotRail nach North Berwick (33 Min.)." },
+      { title: "Von North Berwick nach Archerfield", detail: "Archerfield liegt ca. 8 km von North Berwick entfernt. Ein lokales Taxi dauert ca. 10 bis 12 Minuten. Am Flughafen kann auch ein Mietwagen genommen werden." },
+      { title: "Alternative: Glasgow Airport (GLA)", detail: "Glasgow Airport liegt ca. 130 km vom Veranstaltungsort entfernt (1,5 bis 2 Stunden). Von Glasgow empfehlen wir einen Mietwagen oder ein Taxi." },
     ],
   },
   {
     icon: "🚂",
-    intro: "North Berwick ist gut mit ScotRail von Edinburgh Waverley aus erreichbar. Die Fahrt dauert nur 33 Minuten, und die Züge fahren ca. alle 30 Minuten.",
+    intro: "North Berwick ist mit ScotRail bequem von Edinburgh Waverley aus erreichbar. Die Fahrt dauert nur 33 Minuten, und die Züge fahren ca. alle 30 Minuten.",
     steps: [
-      { title: "Von London", detail: "Nimm den LNER East Coast Main Line von London King's Cross nach Edinburgh Waverley (ca. 4,5 Stunden). Züge fahren häufig. Buche im Voraus für die besten Preise auf lner.co.uk." },
+      { title: "Von London", detail: "Mit LNER East Coast Main Line von London King's Cross nach Edinburgh Waverley (ca. 4,5 Stunden). Züge fahren häufig. Am besten im Voraus buchen auf lner.co.uk." },
       { title: "Von Edinburgh Waverley nach North Berwick", detail: "ScotRail betreibt regelmäßige Direktverbindungen von Edinburgh Waverley nach North Berwick (33 Minuten). Züge fahren ca. alle 30 Minuten. Fahrpläne auf scotrail.co.uk." },
-      { title: "Von North Berwick nach Archerfield", detail: "Vom Bahnhof North Berwick nimm ein lokales Taxi nach Archerfield (ca. 10 bis 12 Minuten, ca. £10 bis £15). North Berwick Taxis: +44 (0) 1620 893 000." },
+      { title: "Von North Berwick nach Archerfield", detail: "Vom Bahnhof North Berwick mit dem Taxi nach Archerfield (ca. 10 bis 12 Minuten, ca. £10 bis £15). North Berwick Taxis: +44 (0) 1620 893 000." },
       { title: "Aus anderen britischen Städten", detail: "Aus Manchester, Leeds, Newcastle und anderen Städten im Norden: Zug nach Edinburgh Waverley, dann die North Berwick Linie." },
     ],
   },
   {
     icon: "🚗",
-    intro: "Archerfield liegt an der A198 zwischen Gullane und North Berwick in East Lothian. Die Postleitzahl für die Navigation ist EH39 5HU.",
+    intro: "Archerfield liegt an der A198 zwischen Gullane und North Berwick in East Lothian. Die Postleitzahl für das Navigationssystem lautet EH39 5HU.",
     steps: [
-      { title: "Von Edinburgh (55 km, ca. 45 Min.)", detail: "Fahre auf der A1 Richtung Berwick-upon-Tweed. Verlasse die A1 an der Bankton Junction auf die A198 Richtung North Berwick. Weiter durch Aberlady und Gullane. Archerfield ist ca. 3 km nach Gullane ausgeschildert." },
-      { title: "Von Norden (über A1)", detail: "Auf der A1 südwärts, nehme die A198-Ausfahrt Richtung North Berwick. Folge der A198 durch Aberlady und Gullane." },
-      { title: "Von Glasgow (ca. 130 km, 1,5 Std.)", detail: "Nimm die M8 Richtung Edinburgh, dann die A720 Edinburgh City Bypass östlich. Weiter auf der A1 und Ausfahrt auf die A198 Richtung North Berwick." },
-      { title: "Parken bei Archerfield", detail: "Ausreichend kostenlose Parkplätze sind auf dem Archerfield Estate vorhanden. Bitte folge der Beschilderung bei der Ankunft." },
+      { title: "Von Edinburgh (55 km, ca. 45 Min.)", detail: "Auf der A1 Richtung Berwick-upon-Tweed fahren. An der Bankton Junction auf die A198 Richtung North Berwick abbiegen. Weiter durch Aberlady und Gullane. Archerfield ist ca. 3 km nach Gullane ausgeschildert." },
+      { title: "Von Norden (über A1)", detail: "Auf der A1 südwärts, an der A198-Ausfahrt Richtung North Berwick abbiegen. Der A198 durch Aberlady und Gullane folgen." },
+      { title: "Von Glasgow (ca. 130 km, 1,5 Std.)", detail: "Auf der M8 Richtung Edinburgh, dann auf den A720 Edinburgh City Bypass östlich wechseln. Weiter auf der A1 und an der A198 Richtung North Berwick abbiegen." },
+      { title: "Parken bei Archerfield", detail: "Ausreichend kostenlose Parkplätze sind auf dem Archerfield Estate vorhanden. Bitte der Beschilderung bei der Ankunft folgen." },
     ],
   },
   {
     icon: "🚕",
-    intro: "Taxis und Mietwagen sind eine bequeme Option, besonders für den Hochzeitstag selbst. Wir empfehlen eine Vorabbestellung für das Hochzeitswochenende.",
+    intro: "Taxis und Mietwagen sind eine bequeme Option, besonders für den Hochzeitstag selbst. Für das Hochzeitswochenende empfehlen wir eine Vorabbestellung.",
     steps: [
       { title: "Vom Edinburgh Airport", detail: "Ein Taxi vom Edinburgh Airport nach Archerfield kostet ca. £50 bis £70 und dauert 45 bis 60 Minuten. Vorbuchen bei Central Taxis Edinburgh (+44 131 229 2468) oder City Cabs (+44 131 228 1211)." },
       { title: "Aus dem Stadtzentrum Edinburgh", detail: "Ein Taxi aus dem Stadtzentrum Edinburgh kostet ca. £40 bis £55 und dauert ca. 40 bis 50 Minuten. Uber ist in Edinburgh ebenfalls verfügbar." },
       { title: "Lokale North Berwick Taxis", detail: "Für kürzere Fahrten in der Umgebung: North Berwick Taxis: +44 (0) 1620 893 000." },
-      { title: "Private Transfers", detail: "Für Gruppen kann ein Minibus oder privater Transfer arrangiert werden. Mehrere Unternehmen fahren zwischen Edinburgh und East Lothian." },
+      { title: "Private Transfers", detail: "Für Gruppen kann ein Kleinbus oder privater Transfer arrangiert werden. Mehrere Unternehmen bieten Fahrten zwischen Edinburgh und East Lothian an." },
     ],
   },
 ];
@@ -53,16 +53,16 @@ export default function TravelSectionDe() {
     <section id="travel" style={{ background: "oklch(0.93 0.015 80)", padding: "6rem 1.5rem", scrollMarginTop: "64px" }}>
       <div style={{ maxWidth: "900px", margin: "0 auto" }}>
         <div className="fade-in-up" style={{ textAlign: "center", marginBottom: "3rem" }}>
-          <p style={{ fontFamily: "'Lato', sans-serif", fontSize: "0.7rem", fontWeight: 700, letterSpacing: "0.25em", textTransform: "uppercase", color: "oklch(0.62 0.07 155)", marginBottom: "0.75rem" }}>So kommst Du zu uns</p>
+          <p style={{ fontFamily: "'Lato', sans-serif", fontSize: "0.7rem", fontWeight: 700, letterSpacing: "0.25em", textTransform: "uppercase", color: "oklch(0.62 0.07 155)", marginBottom: "0.75rem" }}>So kommt Ihr zu uns</p>
           <h2 style={{ fontFamily: "'Cormorant Garamond', serif", fontSize: "clamp(2rem, 5vw, 3rem)", fontWeight: 400, color: "oklch(0.28 0.06 155)", marginBottom: "1rem" }}>Anreise</h2>
           <p style={{ fontFamily: "'Lato', sans-serif", fontSize: "0.95rem", color: "oklch(0.45 0.02 80)", maxWidth: "520px", margin: "0 auto", lineHeight: 1.7 }}>
-            Archerfield liegt in East Lothian, Schottland. Wähle Deine Reisemethode unten.
+            Archerfield liegt in East Lothian, Schottland. Wählt Eure bevorzugte Anreisemethode.
           </p>
         </div>
 
         <div className="fade-in-up" style={{ background: "oklch(0.28 0.06 155)", borderRadius: "0.5rem", padding: "1.25rem 1.5rem", marginBottom: "2rem", display: "flex", flexWrap: "wrap", gap: "1.5rem", alignItems: "center", justifyContent: "space-between" }}>
           <div>
-            <p style={{ fontFamily: "'Lato', sans-serif", fontSize: "0.65rem", fontWeight: 700, letterSpacing: "0.2em", textTransform: "uppercase", color: "oklch(0.72 0.06 155)", marginBottom: "0.4rem" }}>Adresse Empfangsort</p>
+            <p style={{ fontFamily: "'Lato', sans-serif", fontSize: "0.65rem", fontWeight: 700, letterSpacing: "0.2em", textTransform: "uppercase", color: "oklch(0.72 0.06 155)", marginBottom: "0.4rem" }}>Adresse Hochzeitsfeier</p>
             <p style={{ fontFamily: "'Cormorant Garamond', serif", fontSize: "1.1rem", color: "oklch(0.97 0.01 85)", lineHeight: 1.5 }}>Archerfield, Golf Green, Dirleton<br />East Lothian, EH39 5HU</p>
           </div>
           <a href="https://maps.google.com/?q=Archerfield+House+Dirleton+East+Lothian+EH39+5HU" target="_blank" rel="noopener noreferrer" style={{ fontFamily: "'Lato', sans-serif", fontSize: "0.8rem", fontWeight: 700, letterSpacing: "0.1em", textTransform: "uppercase", color: "oklch(0.28 0.06 155)", background: "oklch(0.82 0.05 155)", padding: "0.6rem 1.25rem", borderRadius: "0.4rem", textDecoration: "none", whiteSpace: "nowrap" }}>

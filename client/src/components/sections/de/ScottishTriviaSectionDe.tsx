@@ -1,27 +1,59 @@
 const GH = "https://raw.githubusercontent.com/sesauer1977/amy-sebastian-wedding/main/public/images";
 
 const triviaCards = [
-  { emoji: "🥃", title: "Der Quaich", subtitle: "Schottlands Liebesbecher", image: `${GH}/trad-quaich.jpg`, body: "Eine der schönsten schottischen Hochzeitstraditionen ist der Quaich (ausgesprochen 'kwach'), eine flache Silberschale mit zwei Griffen. Nach der Zeremonie füllt die Braut ihn mit Whisky und reicht ihn dem Bräutigam. Sie trinken gemeinsam und reichen ihn dann an ihre Eltern und engsten Gäste weiter als Symbol der Gastfreundschaft und geteilten Liebe.", colour: "oklch(0.93 0.03 75)", accent: "oklch(0.62 0.09 75)" },
-  { emoji: "💃", title: "Der Ceilidh", subtitle: "Schottlands größte Partytradition", image: `${GH}/trad-ceilidh-v2.jpg`, body: "Ein Ceilidh (ausgesprochen 'kay-lee') ist ein traditionelles schottisches Tanzfest mit Volksmusik. Bei einem Hochzeits-Ceilidh ruft ein Ansager die Schritte, sodass alle mitmachen können, auch ohne Vorkenntnisse. Erwarte den Dashing White Sergeant, Strip the Willow und die Gay Gordons. Keine Erfahrung nötig, nur Begeisterung und bequeme Schuhe.", colour: "oklch(0.93 0.03 155)", accent: "oklch(0.52 0.09 155)" },
-  { emoji: "🏴󠁧󠁢󠁳󠁣󠁴󠁿", title: "Den Kilt tragen", subtitle: "Hochlandkleidung für Gäste", image: `${GH}/trad-kilt.jpg`, body: "Herren sind herzlich eingeladen, Highland Dress zu tragen. Ein vollständiges Kilt-Outfit umfasst den Kilt im Clan-Tartan, eine Prince Charlie oder Argyll Jacke, Sporran, Sgian Dubh (ein kleines Messer in der Socke), Ghillie Brogues und Kilt-Strümpfe. Damen können eine Tartanschärpe über dem Kleid tragen.", colour: "oklch(0.93 0.025 15)", accent: "oklch(0.62 0.08 15)" },
-  { emoji: "🎵", title: "Der Dudelsack", subtitle: "Schottlands Nationalinstrument", image: `${GH}/trad-bagpipes.jpg`, body: "Der Great Highland Bagpipe ist einer der ikonischsten Klänge der Welt. Bei schottischen Hochzeiten führt ein Pfeifer traditionell die Brautgesellschaft in die Zeremonie und spielt die Gäste danach hinaus. Der Klang trägt meilenweit über die Küste von East Lothian. Wenn Du noch nie live Dudelsäcke gehört hast, bereite Dich darauf vor, bewegt zu werden.", colour: "oklch(0.93 0.03 255)", accent: "oklch(0.52 0.08 255)" },
+  {
+    emoji: "🥃",
+    title: "Der Quaich",
+    subtitle: "Schottlands Liebesbecher",
+    image: `${GH}/trad-quaich.jpg`,
+    body: "Eine der schönsten schottischen Hochzeitstraditionen ist der Quaich (ausgesprochen 'kwach'), eine flache Silberschale mit zwei Griffen. Nach der Trauung füllt die Braut ihn mit Whisky und reicht ihn dem Bräutigam. Beide trinken gemeinsam daraus und reichen ihn dann an Eltern und engste Gäste weiter, als Zeichen der Gastfreundschaft und geteilten Freude. Das Wort stammt vom gälischen 'cuach', was Becher bedeutet.",
+    colour: "oklch(0.93 0.03 75)",
+    accent: "oklch(0.62 0.09 75)",
+  },
+  {
+    emoji: "💃",
+    title: "Der Ceilidh",
+    subtitle: "Schottlands größtes Tanzfest",
+    image: `${GH}/trad-ceilidh-v2.jpg`,
+    body: "Ein Ceilidh (ausgesprochen 'kay-lee') ist ein traditionelles schottisches Tanzfest mit Volksmusik. Ein Ansager erklärt die Schritte, sodass wirklich alle mitmachen können, auch ohne Vorkenntnisse. Erwartet Tänze wie den Dashing White Sergeant, Strip the Willow und die Gay Gordons. Keine Vorkenntnisse nötig, nur gute Laune und bequeme Schuhe.",
+    colour: "oklch(0.93 0.03 155)",
+    accent: "oklch(0.52 0.09 155)",
+  },
+  {
+    emoji: "🏴󠁧󠁢󠁳󠁣󠁴󠁿",
+    title: "Den Kilt tragen",
+    subtitle: "Schottische Tracht für Gäste",
+    image: `${GH}/trad-kilt.jpg`,
+    body: "Herren sind herzlich eingeladen, schottische Tracht zu tragen. Ein vollständiges Kilt-Outfit besteht aus dem Kilt im Clan-Tartan, einer Prince Charlie oder Argyll Jacke, Sporran, Sgian Dubh (ein kleines Messer in der Socke), Ghillie Brogues und Kilt-Strümpfen. Wer keinen eigenen Clan-Tartan hat, kann einen universellen Tartan wie Black Watch oder Hunting Stewart tragen. Damen können eine Tartanschärpe über dem Kleid tragen.",
+    colour: "oklch(0.93 0.025 15)",
+    accent: "oklch(0.62 0.08 15)",
+  },
+  {
+    emoji: "🎵",
+    title: "Der Dudelsack",
+    subtitle: "Schottlands Nationalinstrument",
+    image: `${GH}/trad-bagpipes.jpg`,
+    body: "Der Great Highland Bagpipe ist einer der unverwechselbarsten Klänge der Welt. Bei schottischen Hochzeiten führt ein Pfeifer traditionell die Brautgesellschaft in die Kirche und spielt die Gäste danach hinaus. Der Klang trägt meilenweit über die Küste von East Lothian. Wer noch nie live Dudelsäcke gehört hat, darf sich auf ein unvergessliches Erlebnis freuen.",
+    colour: "oklch(0.93 0.03 255)",
+    accent: "oklch(0.52 0.08 255)",
+  },
 ];
 
 const kiltHire = [
-  { name: "Bowdens Kiltmakers", location: "42 Keppel Road, North Berwick, EH39 4QG", note: "Direkt in North Berwick", tel: "07519 072265", highlight: true },
+  { name: "Bowdens Kiltmakers", location: "42 Keppel Road, North Berwick, EH39 4QG", note: "Direkt in North Berwick, gleich beim Veranstaltungsort", tel: "07519 072265", highlight: true },
   { name: "Jean O'Rourke Kiltmaker", location: "East Lothian", note: "Lokaler Kiltmacher in East Lothian", tel: "01875 852881", url: "https://jeanorourkekiltmaker.co.uk/", highlight: false },
-  { name: "Gordon Nicolson Kiltmakers", location: "Edinburgh", note: "Premium Kilt-Verleih in Edinburgh, ab ca. £150 für 4 Tage", url: "https://nicolsonkiltmakers.com/pages/edinburgh-kilt-hire", highlight: false },
+  { name: "Gordon Nicolson Kiltmakers", location: "Edinburgh", note: "Hochwertiger Kilt-Verleih in Edinburgh, ab ca. £150 für 4 Tage", url: "https://nicolsonkiltmakers.com/pages/edinburgh-kilt-hire", highlight: false },
   { name: "McCalls Highlandwear", location: "21-22 Haddington Place, Edinburgh, EH7 4AF", note: "Über 30 Tartans, ab ca. £99", url: "https://www.mccalls.co.uk/collections/kilt-hire-edinburgh", highlight: false },
-  { name: "Kinloch Anderson", location: "Edinburgh", note: "Historischer Kiltmacher seit 1868, ca. £165 für 4 Tage", url: "https://www.kinlochanderson.com/shop/men/kilt-services/highland-dress-kilt-hire", highlight: false },
+  { name: "Kinloch Anderson", location: "Edinburgh", note: "Traditionsreicher Kiltmacher seit 1868, ca. £165 für 4 Tage", url: "https://www.kinlochanderson.com/shop/men/kilt-services/highland-dress-kilt-hire", highlight: false },
 ];
 
 const funFacts = [
-  { emoji: "🌿", fact: "Die Distel ist Schottlands Nationalblume. Sie wurde gewählt, weil Wikinger-Eindringlinge auf sie barfuss traten und aufschrien, wodurch schlafende schottische Soldaten geweckt wurden." },
-  { emoji: "💍", fact: "Schottische Eheringe sind traditionell schlichte Goldbänder, getragen an der linken Hand. Der Claddagh-Ring mit zwei Händen, die ein gekröntes Herz halten, ist ebenfalls beliebt." },
-  { emoji: "🎀", fact: "Das Handfasting ist eine alte keltische Tradition, bei der die Hände des Paares mit einem Band zusammengebunden werden. Daher kommt der Ausdruck 'den Knoten knüpfen'." },
-  { emoji: "🌾", fact: "Haferkuchen und Käse sind ein traditionelles schottisches Hochzeitsgeschenk als Symbol für Wohlstand und einen vollen Vorratskeller." },
+  { emoji: "🌿", fact: "Die Distel ist Schottlands Nationalblume. Sie wurde gewählt, weil Wikinger-Eindringlinge auf sie barfuss traten und aufschrien, wodurch schlafende schottische Soldaten rechtzeitig gewarnt wurden." },
+  { emoji: "💍", fact: "Schottische Eheringe sind traditionell schlichte Goldbänder, getragen an der linken Hand. Der Claddagh-Ring mit zwei Händen, die ein gekröntes Herz halten, ist ebenfalls sehr beliebt." },
+  { emoji: "🎀", fact: "Das Handfasting ist eine alte keltische Tradition, bei der die Hände des Paares mit einem Band zusammengebunden werden. Daher kommt der englische Ausdruck 'tying the knot'." },
+  { emoji: "🌾", fact: "Haferkuchen und Käse sind ein traditionelles schottisches Hochzeitsgeschenk, das Wohlstand und einen gut gefüllten Vorratskeller für das neue Zuhause symbolisiert." },
   { emoji: "🪨", fact: "Das schottisch-gälische Wort für Hochzeit ist 'banais', und das Wort für Flitterwochen ist 'mios na meala', was 'Monat des Honigs' bedeutet." },
-  { emoji: "🦅", fact: "Das schottische Wappentier ist das Einhorn, ein Symbol für Reinheit, Kraft und Unabhängigkeit. Du findest es im königlichen Wappen Schottlands." },
+  { emoji: "🦅", fact: "Das schottische Wappentier ist das Einhorn, ein Symbol für Reinheit, Stärke und Unabhängigkeit. Es findet sich im königlichen Wappen Schottlands." },
 ];
 
 export default function ScottishTriviaSectionDe() {
@@ -30,9 +62,9 @@ export default function ScottishTriviaSectionDe() {
       <div style={{ maxWidth: "1100px", margin: "0 auto" }}>
         <div className="fade-in-up" style={{ textAlign: "center", marginBottom: "4rem" }}>
           <p style={{ fontFamily: "'Lato', sans-serif", fontSize: "0.7rem", fontWeight: 700, letterSpacing: "0.25em", textTransform: "uppercase", color: "oklch(0.62 0.07 155)", marginBottom: "0.75rem" }}>Unbedingt lesen</p>
-          <h2 style={{ fontFamily: "'Cormorant Garamond', serif", fontSize: "clamp(2.2rem, 5vw, 3.5rem)", fontWeight: 400, color: "oklch(0.28 0.06 155)", marginBottom: "1rem" }}>Ein kleiner Leitfaden zur schottischen Hochzeit</h2>
+          <h2 style={{ fontFamily: "'Cormorant Garamond', serif", fontSize: "clamp(2.2rem, 5vw, 3.5rem)", fontWeight: 400, color: "oklch(0.28 0.06 155)", marginBottom: "1rem" }}>Kleiner Leitfaden zur schottischen Hochzeit</h2>
           <p style={{ fontFamily: "'Lato', sans-serif", fontSize: "1rem", color: "oklch(0.45 0.02 80)", maxWidth: "560px", margin: "0 auto", lineHeight: 1.7 }}>
-            Ob erfahrener Schotte oder Erstbesucher, hier ist alles, was Du wissen musst, um eine richtige schottische Hochzeitsfeier zu genießen. Slainthe!
+            Ob erfahrener Schottland-Kenner oder Erstbesucher, hier findet Ihr alles, was Ihr wissen müsst, um eine richtige schottische Hochzeitsfeier in vollen Zügen zu genießen. Slainthe!
           </p>
         </div>
 
@@ -57,7 +89,7 @@ export default function ScottishTriviaSectionDe() {
           <div style={{ textAlign: "center", marginBottom: "2.5rem" }}>
             <h3 style={{ fontFamily: "'Cormorant Garamond', serif", fontSize: "clamp(1.8rem, 4vw, 2.5rem)", fontWeight: 400, color: "oklch(0.28 0.06 155)", marginBottom: "0.75rem" }}>Wo man einen Kilt leihen kann</h3>
             <p style={{ fontFamily: "'Lato', sans-serif", fontSize: "0.9rem", color: "oklch(0.45 0.02 80)", maxWidth: "520px", margin: "0 auto", lineHeight: 1.7 }}>
-              Wir empfehlen, den Kilt mindestens 6 bis 8 Wochen vor der Hochzeit zu buchen. Hier sind einige hervorragende Optionen in der Nähe des Veranstaltungsortes und in Edinburgh.
+              Wir empfehlen, den Kilt mindestens 6 bis 8 Wochen vor der Hochzeit zu reservieren. Hier sind einige hervorragende Adressen in der Nähe und in Edinburgh.
             </p>
           </div>
           <div style={{ display: "grid", gridTemplateColumns: "repeat(auto-fill, minmax(min(100%, 320px), 1fr))", gap: "1rem" }}>
@@ -77,7 +109,7 @@ export default function ScottishTriviaSectionDe() {
         {/* Fun facts */}
         <div className="fade-in-up">
           <div style={{ textAlign: "center", marginBottom: "2.5rem" }}>
-            <h3 style={{ fontFamily: "'Cormorant Garamond', serif", fontSize: "clamp(1.8rem, 4vw, 2.5rem)", fontWeight: 400, color: "oklch(0.28 0.06 155)", marginBottom: "0.5rem" }}>Wusstest Du schon?</h3>
+            <h3 style={{ fontFamily: "'Cormorant Garamond', serif", fontSize: "clamp(1.8rem, 4vw, 2.5rem)", fontWeight: 400, color: "oklch(0.28 0.06 155)", marginBottom: "0.5rem" }}>Wusstet Ihr schon?</h3>
             <p style={{ fontFamily: "'Lato', sans-serif", fontSize: "0.9rem", color: "oklch(0.45 0.02 80)" }}>Ein paar interessante Fakten über Schottland.</p>
           </div>
           <div style={{ display: "grid", gridTemplateColumns: "repeat(auto-fill, minmax(min(100%, 320px), 1fr))", gap: "1rem" }}>
@@ -92,7 +124,7 @@ export default function ScottishTriviaSectionDe() {
 
         <div className="fade-in-up" style={{ marginTop: "4rem", textAlign: "center", background: "oklch(0.28 0.06 155)", borderRadius: "0.75rem", padding: "3rem 2rem" }}>
           <p style={{ fontFamily: "'Cormorant Garamond', serif", fontStyle: "italic", fontSize: "clamp(1.5rem, 4vw, 2.2rem)", fontWeight: 400, color: "oklch(0.97 0.01 85)", marginBottom: "0.75rem" }}>"Slainthe Mhath!"</p>
-          <p style={{ fontFamily: "'Lato', sans-serif", fontSize: "0.85rem", color: "oklch(0.72 0.06 155)", letterSpacing: "0.08em" }}>Der traditionelle schottische Toast, ausgesprochen 'slan-ja-va', bedeutet 'Gute Gesundheit!'</p>
+          <p style={{ fontFamily: "'Lato', sans-serif", fontSize: "0.85rem", color: "oklch(0.72 0.06 155)", letterSpacing: "0.08em" }}>Der traditionelle schottische Trinkspruch, ausgesprochen 'slan-ja-va', bedeutet 'Auf Eure Gesundheit!'</p>
         </div>
       </div>
     </section>

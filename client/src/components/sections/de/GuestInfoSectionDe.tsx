@@ -2,12 +2,42 @@ const WHATSAPP_LINK = "https://chat.whatsapp.com/K95KEI4HPru5XbGhzcPa7H?s=hd&p=i
 const WHATSAPP_QR = "https://raw.githubusercontent.com/sesauer1977/amy-sebastian-wedding/main/public/images/whatsapp-qr-v2.jpg";
 
 const infoCards = [
-  { icon: "👶", title: "Kinder willkommen", body: "Deine Kinder sind herzlich willkommen. Das Gelände The Waterfront ist vollständig eingezäunt mit viel Platz im Freien, Strandzugang und hohen Zäunen. Alle Eltern bleiben für ihre Kinder verantwortlich, aber wir bieten betreute Kinderaktivitäten an: Spiele, Kinderschminken und Kinderfilme.", whatsapp: false },
-  { icon: "🍽", title: "Ernährungsbedürfnisse", body: "Bitte teile uns bei Deiner Rückmeldung etwaige Ernährungsbedürfnisse oder Allergien mit. Wir möchten sicherstellen, dass alle gut versorgt sind.", whatsapp: false },
-  { icon: "🎁", title: "Geschenke", body: "Wir erwarten wirklich keine Geschenke. Deine Anwesenheit und die Mühe, die Du auf Dich nimmst, um bei uns zu sein, ist das größte Geschenk.", whatsapp: false },
-  { icon: "💬", title: "WhatsApp-Gruppe", body: "Wenn Du planst teilzunehmen, tritt bitte unserer Hochzeits-WhatsApp-Gruppe bei. Dort teilen wir Updates, Logistik und kurzfristige Informationen.", whatsapp: true },
-  { icon: "📬", title: "Save the Date", body: "Save-the-Date-Karten werden im Juli 2026 per Post verschickt. Formelle Einladungen folgen näher am Hochzeitstermin.", whatsapp: false },
-  { icon: "📸", title: "Fotos", body: "Nach der Hochzeit werden wir eine Galerie auf dieser Website teilen. Schau nach dem großen Tag wieder vorbei!", whatsapp: false },
+  {
+    icon: "👶",
+    title: "Kinder sind herzlich willkommen",
+    body: "Eure Kinder sind herzlich willkommen. Das Gelände The Waterfront ist vollständig eingezäunt, mit viel Platz im Freien, Strandzugang und sicherer Umgebung. Die Eltern bleiben selbstverständlich für ihre Kinder verantwortlich. Wir werden jedoch betreute Kinderaktivitäten anbieten, darunter Spiele, Kinderschminken und Kinderfilme. Wir möchten, dass unser Tag für die ganze Familie ein Freudentag wird.",
+    whatsapp: false,
+  },
+  {
+    icon: "🍽",
+    title: "Ernährungswünsche",
+    body: "Bitte teilt uns bei Eurer Rückmeldung etwaige Ernährungswünsche oder Allergien mit. Wir möchten sicherstellen, dass sich alle rundum wohlfühlen.",
+    whatsapp: false,
+  },
+  {
+    icon: "🎁",
+    title: "Geschenke",
+    body: "Wir wünschen uns keine Geschenke. Eure Anwesenheit und die Mühe, die Ihr auf Euch nehmt, um bei uns zu sein, ist das schönste Geschenk, das wir uns vorstellen können.",
+    whatsapp: false,
+  },
+  {
+    icon: "💬",
+    title: "WhatsApp-Gruppe",
+    body: "Wenn Ihr plant, dabei zu sein, tretet bitte unserer Hochzeits-WhatsApp-Gruppe bei. Dort werden wir Neuigkeiten, Logistik und alle wichtigen Informationen teilen.",
+    whatsapp: true,
+  },
+  {
+    icon: "📬",
+    title: "Save the Date",
+    body: "Save-the-Date-Karten werden im Juli 2026 per Post verschickt. Offizielle Einladungen folgen näher am Hochzeitstermin. Falls Ihr noch keine erhalten habt, meldet Euch bitte bei uns.",
+    whatsapp: false,
+  },
+  {
+    icon: "📸",
+    title: "Fotos",
+    body: "Nach der Hochzeit werden wir eine Galerie auf dieser Website einrichten, damit alle die Erinnerungen nochmals erleben können. Schaut nach dem großen Tag wieder vorbei!",
+    whatsapp: false,
+  },
 ];
 
 export default function GuestInfoSectionDe() {
@@ -16,8 +46,8 @@ export default function GuestInfoSectionDe() {
       <div style={{ maxWidth: "1100px", margin: "0 auto" }}>
         <div className="fade-in-up" style={{ textAlign: "center", marginBottom: "4rem" }}>
           <p style={{ fontFamily: "'Lato', sans-serif", fontSize: "0.7rem", fontWeight: 700, letterSpacing: "0.25em", textTransform: "uppercase", color: "oklch(0.62 0.07 155)", marginBottom: "0.75rem" }}>Gut zu wissen</p>
-          <h2 style={{ fontFamily: "'Cormorant Garamond', serif", fontSize: "clamp(2rem, 5vw, 3rem)", fontWeight: 400, color: "oklch(0.28 0.06 155)", marginBottom: "1rem" }}>Gäste-Informationen</h2>
-          <p style={{ fontFamily: "'Lato', sans-serif", fontSize: "0.95rem", color: "oklch(0.45 0.02 80)", maxWidth: "480px", margin: "0 auto", lineHeight: 1.7 }}>Alles, was Du vor dem großen Tag wissen musst.</p>
+          <h2 style={{ fontFamily: "'Cormorant Garamond', serif", fontSize: "clamp(2rem, 5vw, 3rem)", fontWeight: 400, color: "oklch(0.28 0.06 155)", marginBottom: "1rem" }}>Infos für Gäste</h2>
+          <p style={{ fontFamily: "'Lato', sans-serif", fontSize: "0.95rem", color: "oklch(0.45 0.02 80)", maxWidth: "480px", margin: "0 auto", lineHeight: 1.7 }}>Alles, was Ihr vor dem großen Tag wissen müsst.</p>
         </div>
 
         <div style={{ display: "grid", gridTemplateColumns: "repeat(auto-fill, minmax(min(100%, 320px), 1fr))", gap: "1.25rem", marginBottom: "4rem" }}>
@@ -46,7 +76,7 @@ export default function GuestInfoSectionDe() {
             <div style={{ flex: 1, height: "1px", background: "linear-gradient(to left, transparent, oklch(0.62 0.07 155))" }} />
           </div>
           <p style={{ fontFamily: "'Cormorant Garamond', serif", fontStyle: "italic", fontSize: "clamp(1.3rem, 3vw, 1.8rem)", fontWeight: 400, color: "oklch(0.28 0.06 155)", lineHeight: 1.5, maxWidth: "560px", margin: "0 auto 1rem" }}>
-            Wir können es kaum erwarten, mit Dir an der Küste von East Lothian zu feiern.
+            Wir freuen uns riesig, diesen besonderen Tag mit Euch an der Küste von East Lothian zu feiern.
           </p>
           <p style={{ fontFamily: "'Lato', sans-serif", fontSize: "0.85rem", color: "oklch(0.55 0.01 80)", letterSpacing: "0.08em" }}>Amy &amp; Sebastian</p>
         </div>

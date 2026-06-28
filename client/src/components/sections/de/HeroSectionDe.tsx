@@ -10,7 +10,7 @@ export default function HeroSectionDe() {
       <div style={{ position: "absolute", inset: 0, background: "linear-gradient(to bottom, oklch(0.15 0.04 155 / 0.55) 0%, oklch(0.15 0.04 155 / 0.35) 50%, oklch(0.15 0.04 155 / 0.65) 100%)" }} />
       <div style={{ position: "relative", zIndex: 1, textAlign: "center", padding: "2rem 1.5rem", maxWidth: "700px" }}>
         <p style={{ fontFamily: "'Lato', sans-serif", fontSize: "0.75rem", fontWeight: 700, letterSpacing: "0.25em", textTransform: "uppercase", color: "oklch(0.85 0.05 155)", marginBottom: "1.5rem", opacity: 0, animation: "fadeInUp 0.8s cubic-bezier(0.23, 1, 0.32, 1) 0.2s forwards" }}>
-          Wir laden Dich herzlich ein, mit uns zu feiern
+          Wir laden Euch herzlich ein, mit uns zu feiern
         </p>
         <h1 style={{ fontFamily: "'Cormorant Garamond', serif", fontSize: "clamp(3.5rem, 8vw, 6rem)", fontWeight: 300, color: "oklch(0.97 0.01 85)", letterSpacing: "0.02em", lineHeight: 1.1, marginBottom: "0.5rem", opacity: 0, animation: "fadeInUp 0.8s cubic-bezier(0.23, 1, 0.32, 1) 0.4s forwards" }}>
           Amy &amp; Sebastian

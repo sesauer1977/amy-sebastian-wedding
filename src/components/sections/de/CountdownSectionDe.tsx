@@ -30,7 +30,7 @@ export default function CountdownSectionDe() {
   return (
     <section style={{ background: "oklch(0.28 0.06 155)", padding: "4rem 1.5rem", textAlign: "center" }}>
       <p className="fade-in-up" style={{ fontFamily: "'Cormorant Garamond', serif", fontStyle: "italic", fontSize: "1.1rem", color: "oklch(0.82 0.05 155)", marginBottom: "2rem", letterSpacing: "0.05em" }}>
-        Der Countdown läuft…
+        Noch bis zum großen Tag…
       </p>
       <div className="fade-in-up" style={{ display: "flex", justifyContent: "center", gap: "clamp(1rem, 4vw, 3rem)", flexWrap: "wrap" }}>
         {units.map((unit) => (

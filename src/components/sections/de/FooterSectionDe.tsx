@@ -7,7 +7,7 @@ export default function FooterSectionDe() {
       <div style={{ maxWidth: "600px", margin: "0 auto" }}>
         <img src={`${GH}/logo-monogram-v2.png`} alt="Amy & Sebastian" style={{ width: "48px", height: "48px", margin: "0 auto 1rem", display: "block", opacity: 0.85 }} />
         <p style={{ fontFamily: "'Cormorant Garamond', serif", fontSize: "1.2rem", fontWeight: 400, color: "oklch(0.92 0.02 85)", marginBottom: "0.25rem" }}>Amy Carmichael &amp; Sebastian Sauerborn</p>
-        <p style={{ fontFamily: "'Cormorant Garamond', serif", fontStyle: "italic", fontSize: "0.95rem", color: "oklch(0.72 0.06 155)", marginBottom: "1.5rem" }}>8. Mai 2027 · Archerfield, East Lothian</p>
+        <p style={{ fontFamily: "'Cormorant Garamond', serif", fontStyle: "italic", fontSize: "0.95rem", color: "oklch(0.72 0.06 155)", marginBottom: "1.5rem" }}>8. Mai 2027 · Archerfield, East Lothian, Schottland</p>
         <div style={{ display: "flex", alignItems: "center", gap: "0.75rem", margin: "0 auto 1.5rem", maxWidth: "200px" }}>
           <div style={{ flex: 1, height: "1px", background: "oklch(0.62 0.07 155 / 0.5)" }} />
           <span style={{ color: "oklch(0.62 0.07 155)", fontSize: "0.8rem" }}>✦</span>
