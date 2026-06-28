@@ -5,6 +5,8 @@
  */
 import { useState } from "react";
 
+const GH = "https://raw.githubusercontent.com/sesauer1977/amy-sebastian-wedding/main/public/images";
+
 const archerfieldRooms = [
   {
     type: "Pavilion Suite",
@@ -171,6 +173,47 @@ export default function AccommodationSection() {
             We have a range of accommodation available right on the Archerfield Estate, as well as many
             excellent options nearby. We recommend booking early, as the area is popular.
           </p>
+        </div>
+
+        {/* Archerfield estate image banner */}
+        <div
+          className="fade-in-up"
+          style={{
+            borderRadius: "0.75rem",
+            overflow: "hidden",
+            marginBottom: "3rem",
+            display: "grid",
+            gridTemplateColumns: "repeat(auto-fit, minmax(min(100%, 480px), 1fr))",
+            boxShadow: "0 4px 24px oklch(0.28 0.06 155 / 0.1)",
+          }}
+        >
+          <div
+            style={{
+              minHeight: "260px",
+              backgroundImage: `url('${GH}/archerfield-house.jpg')`,
+              backgroundSize: "cover",
+              backgroundPosition: "center",
+            }}
+          />
+          <div
+            style={{
+              background: "oklch(0.28 0.06 155)",
+              padding: "2rem 2.5rem",
+              display: "flex",
+              flexDirection: "column",
+              justifyContent: "center",
+            }}
+          >
+            <p style={{ fontFamily: "'Lato', sans-serif", fontSize: "0.65rem", fontWeight: 700, letterSpacing: "0.2em", textTransform: "uppercase", color: "oklch(0.72 0.06 155)", marginBottom: "0.5rem" }}>
+              The Estate
+            </p>
+            <h3 style={{ fontFamily: "'Cormorant Garamond', serif", fontSize: "1.8rem", fontWeight: 400, color: "oklch(0.97 0.01 85)", marginBottom: "0.75rem", lineHeight: 1.2 }}>
+              Archerfield Estate
+            </h3>
+            <p style={{ fontFamily: "'Lato', sans-serif", fontSize: "0.88rem", color: "oklch(0.82 0.04 155)", lineHeight: 1.7 }}>
+              Set within 550 acres of stunning East Lothian countryside, Archerfield is one of Scotland's finest private estates. The centrepiece is Archerfield House, a magnificent Georgian mansion. Guests staying on the estate have access to the spa, golf courses, and the beautiful grounds.
+            </p>
+          </div>
         </div>
 
         {/* On-site Archerfield */}

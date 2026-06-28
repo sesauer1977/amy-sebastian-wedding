@@ -11,7 +11,7 @@ const triviaCards = [
     emoji: "🥃",
     title: "The Quaich",
     subtitle: "Scotland's Loving Cup",
-    image: `${GH}/trivia-quaich.jpg`,
+    image: `${GH}/trad-quaich.jpg`,
     body: "One of the most beautiful Scottish wedding traditions is the Quaich (pronounced 'kwach'), a shallow two-handled silver bowl. After the ceremony, the bride fills it with whisky and passes it to the groom. They drink together, then pass it to their parents and closest guests as a symbol of welcome and shared love. The word comes from the Gaelic 'cuach', meaning cup.",
     colour: "oklch(0.93 0.03 75)",
     accent: "oklch(0.62 0.09 75)",
@@ -20,7 +20,7 @@ const triviaCards = [
     emoji: "💃",
     title: "The Ceilidh",
     subtitle: "Scotland's Greatest Party Tradition",
-    image: `${GH}/trivia-ceilidh.jpg`,
+    image: `${GH}/trad-ceilidh.jpg`,
     body: "A ceilidh (pronounced 'kay-lee') is a traditional Scottish social gathering with folk music and dancing. At a wedding ceilidh, a caller shouts the steps so everyone can join in, even if you have never danced before. Expect the Dashing White Sergeant, Strip the Willow, and the Gay Gordons. No experience required, just enthusiasm and comfortable shoes.",
     colour: "oklch(0.93 0.03 155)",
     accent: "oklch(0.52 0.09 155)",
@@ -29,7 +29,7 @@ const triviaCards = [
     emoji: "🏴󠁧󠁢󠁳󠁣󠁴󠁿",
     title: "Wearing a Kilt",
     subtitle: "Highland Dress for Guests",
-    image: `${GH}/trivia-kilt.jpg`,
+    image: `${GH}/trad-kilt.jpg`,
     body: "Gentlemen are warmly encouraged to wear Highland dress if they wish. A full kilt outfit includes the kilt in your clan tartan, a Prince Charlie or Argyll jacket, sporran, sgian dubh (a small knife tucked into the sock), ghillie brogues, and kilt hose. If you do not have your own tartan, a universal tartan such as Black Watch or Hunting Stewart is perfectly appropriate. Ladies can wear a tartan sash over their dress.",
     colour: "oklch(0.93 0.025 15)",
     accent: "oklch(0.62 0.08 15)",
@@ -38,7 +38,7 @@ const triviaCards = [
     emoji: "🎵",
     title: "The Bagpipes",
     subtitle: "Scotland's National Instrument",
-    image: `${GH}/trivia-scotland.jpg`,
+    image: `${GH}/trad-bagpipes.jpg`,
     body: "The Great Highland Bagpipe is one of the most iconic sounds in the world. At Scottish weddings, a piper traditionally leads the bridal party into the ceremony and plays guests out afterwards. The sound carries for miles across the East Lothian coast. If you have never heard bagpipes live before, prepare to be moved. They are loud, proud, and utterly magnificent.",
     colour: "oklch(0.93 0.03 255)",
     accent: "oklch(0.52 0.08 255)",
@@ -96,7 +96,7 @@ const funFacts = [
 export default function ScottishTriviaSection() {
   return (
     <section
-      id="scotland"
+      id="traditions"
       style={{
         background: "oklch(0.97 0.012 85)",
         padding: "6rem 1.5rem",
@@ -135,14 +135,16 @@ export default function ScottishTriviaSection() {
             >
               {/* Image */}
               <div
-                style={{
-                  order: i % 2 === 0 ? 0 : 1,
-                  minHeight: "280px",
-                  backgroundImage: `url('${card.image}')`,
-                  backgroundSize: "cover",
-                  backgroundPosition: "center",
-                  position: "relative",
-                }}
+              style={{
+                order: i % 2 === 0 ? 0 : 1,
+                minHeight: "320px",
+                backgroundImage: `url('${card.image}')`,
+                backgroundSize: "contain",
+                backgroundPosition: "center",
+                backgroundRepeat: "no-repeat",
+                backgroundColor: "oklch(0.97 0.012 85)",
+                position: "relative",
+              }}
               >
                 <div style={{ position: "absolute", inset: 0, background: "oklch(0.15 0.04 155 / 0.2)" }} />
                 <div style={{ position: "absolute", top: "1.25rem", left: "1.25rem", background: "oklch(1 0 0 / 0.9)", borderRadius: "50%", width: "48px", height: "48px", display: "flex", alignItems: "center", justifyContent: "center", fontSize: "1.5rem" }}>
