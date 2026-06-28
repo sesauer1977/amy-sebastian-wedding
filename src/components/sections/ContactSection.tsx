@@ -1,35 +1,31 @@
 /**
  * ContactSection — Private contact form + WhatsApp group link
  * Design: Timeless Ivory & Sage
- * Backend: tRPC → Resend → amycarmichael@hotmail.co.uk + sesauer@gmail.com
+ * Note: NO em dashes anywhere in copy
  */
 import { useState } from "react";
 import { trpc } from "@/lib/trpc";
 import { toast } from "sonner";
 
 const WHATSAPP_LINK = "https://chat.whatsapp.com/K95KEI4HPru5XbGhzcPa7H?s=hd&p=i&mlu=0&amv=0";
+const WHATSAPP_QR = "https://raw.githubusercontent.com/sesauer1977/amy-sebastian-wedding/main/public/images/whatsapp-qr.jpg";
 
 export default function ContactSection() {
-  const [form, setForm] = useState({
-    name: "",
-    email: "",
-    subject: "",
-    message: "",
-  });
+  const [form, setForm] = useState({ name: "", email: "", subject: "", message: "" });
   const [submitted, setSubmitted] = useState(false);
 
   const sendMutation = trpc.contact.send.useMutation({
     onSuccess: () => {
       setSubmitted(true);
       setForm({ name: "", email: "", subject: "", message: "" });
-      toast.success("Message sent! We'll be in touch soon.");
+      toast.success("Message sent! We will be in touch soon.");
     },
     onError: (err) => {
       toast.error(err.message || "Something went wrong. Please try again.");
     },
   });
 
-  const handleChange = (e: React.ChangeEvent<HTMLInputElement | HTMLTextAreaElement | HTMLSelectElement>) => {
+  const handleChange = (e: React.ChangeEvent<HTMLInputElement | HTMLTextAreaElement>) => {
     setForm((prev) => ({ ...prev, [e.target.name]: e.target.value }));
   };
 
@@ -77,7 +73,6 @@ export default function ContactSection() {
       }}
     >
       <div style={{ maxWidth: "900px", margin: "0 auto" }}>
-        {/* Section header */}
         <div className="fade-in-up" style={{ textAlign: "center", marginBottom: "4rem" }}>
           <p style={{ fontFamily: "'Lato', sans-serif", fontSize: "0.7rem", fontWeight: 700, letterSpacing: "0.25em", textTransform: "uppercase", color: "oklch(0.62 0.07 155)", marginBottom: "0.75rem" }}>
             Get in Touch
@@ -86,7 +81,7 @@ export default function ContactSection() {
             Contact Us
           </h2>
           <p style={{ fontFamily: "'Lato', sans-serif", fontSize: "0.95rem", color: "oklch(0.45 0.02 80)", maxWidth: "520px", margin: "0 auto", lineHeight: 1.7 }}>
-            For general wedding questions and updates, please use our WhatsApp group. 
+            For general wedding questions and updates, please use our WhatsApp group.
             For a private message to Amy and Sebastian, use the form below.
           </p>
         </div>
@@ -113,16 +108,15 @@ export default function ContactSection() {
                 WhatsApp Group
               </h3>
               <p style={{ fontFamily: "'Lato', sans-serif", fontSize: "0.88rem", color: "oklch(0.82 0.04 155)", lineHeight: 1.7 }}>
-                Join our wedding WhatsApp group for updates, logistics, and to connect with other guests. 
+                Join our wedding WhatsApp group for updates, logistics, and to connect with other guests.
                 This is the best place for any general questions about the wedding weekend.
               </p>
             </div>
 
-            {/* QR code */}
             <div style={{ display: "flex", justifyContent: "center" }}>
               <img
-                src="https://raw.githubusercontent.com/sesauer1977/amy-sebastian-wedding/main/public/images/whatsapp-qr.jpg"
-                alt="WhatsApp QR code — Amy & Sebastian Wedding 2027"
+                src={WHATSAPP_QR}
+                alt="WhatsApp QR code for Amy and Sebastian Wedding 2027"
                 style={{ width: "160px", height: "160px", borderRadius: "0.5rem", border: "3px solid oklch(0.62 0.07 155 / 0.4)" }}
               />
             </div>
@@ -146,10 +140,7 @@ export default function ContactSection() {
                 padding: "0.7rem 1.5rem",
                 borderRadius: "0.4rem",
                 textDecoration: "none",
-                transition: "background 0.2s ease",
               }}
-              onMouseEnter={(e) => { (e.currentTarget as HTMLAnchorElement).style.background = "oklch(0.62 0.07 155)"; }}
-              onMouseLeave={(e) => { (e.currentTarget as HTMLAnchorElement).style.background = "oklch(0.72 0.07 155)"; }}
             >
               <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor">
                 <path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347z"/>
@@ -183,7 +174,7 @@ export default function ContactSection() {
                   Message Sent!
                 </h4>
                 <p style={{ fontFamily: "'Lato', sans-serif", fontSize: "0.88rem", color: "oklch(0.45 0.02 80)", lineHeight: 1.7 }}>
-                  Thank you — we'll get back to you soon.
+                  Thank you. We will get back to you soon.
                 </p>
                 <button
                   onClick={() => setSubmitted(false)}
@@ -197,62 +188,35 @@ export default function ContactSection() {
                 <div style={{ display: "grid", gridTemplateColumns: "1fr 1fr", gap: "1rem" }}>
                   <div>
                     <label style={labelStyle}>Your Name</label>
-                    <input
-                      type="text"
-                      name="name"
-                      value={form.name}
-                      onChange={handleChange}
-                      placeholder="Jane Smith"
-                      style={inputStyle}
+                    <input type="text" name="name" value={form.name} onChange={handleChange} placeholder="Jane Smith" style={inputStyle}
                       onFocus={(e) => { (e.target as HTMLInputElement).style.borderColor = "oklch(0.62 0.07 155)"; }}
                       onBlur={(e) => { (e.target as HTMLInputElement).style.borderColor = "oklch(0.88 0.02 100)"; }}
-                      required
-                    />
+                      required />
                   </div>
                   <div>
                     <label style={labelStyle}>Your Email</label>
-                    <input
-                      type="email"
-                      name="email"
-                      value={form.email}
-                      onChange={handleChange}
-                      placeholder="jane@example.com"
-                      style={inputStyle}
+                    <input type="email" name="email" value={form.email} onChange={handleChange} placeholder="jane@example.com" style={inputStyle}
                       onFocus={(e) => { (e.target as HTMLInputElement).style.borderColor = "oklch(0.62 0.07 155)"; }}
                       onBlur={(e) => { (e.target as HTMLInputElement).style.borderColor = "oklch(0.88 0.02 100)"; }}
-                      required
-                    />
+                      required />
                   </div>
                 </div>
 
                 <div>
                   <label style={labelStyle}>Subject</label>
-                  <input
-                    type="text"
-                    name="subject"
-                    value={form.subject}
-                    onChange={handleChange}
-                    placeholder="e.g. Question about accommodation"
-                    style={inputStyle}
+                  <input type="text" name="subject" value={form.subject} onChange={handleChange} placeholder="e.g. Question about accommodation" style={inputStyle}
                     onFocus={(e) => { (e.target as HTMLInputElement).style.borderColor = "oklch(0.62 0.07 155)"; }}
                     onBlur={(e) => { (e.target as HTMLInputElement).style.borderColor = "oklch(0.88 0.02 100)"; }}
-                    required
-                  />
+                    required />
                 </div>
 
                 <div>
                   <label style={labelStyle}>Message</label>
-                  <textarea
-                    name="message"
-                    value={form.message}
-                    onChange={handleChange}
-                    placeholder="Your private message to Amy and Sebastian…"
-                    rows={5}
+                  <textarea name="message" value={form.message} onChange={handleChange} placeholder="Your private message to Amy and Sebastian..." rows={5}
                     style={{ ...inputStyle, resize: "vertical", minHeight: "120px" }}
                     onFocus={(e) => { (e.target as HTMLTextAreaElement).style.borderColor = "oklch(0.62 0.07 155)"; }}
                     onBlur={(e) => { (e.target as HTMLTextAreaElement).style.borderColor = "oklch(0.88 0.02 100)"; }}
-                    required
-                  />
+                    required />
                 </div>
 
                 <button
@@ -271,14 +235,10 @@ export default function ContactSection() {
                     letterSpacing: "0.12em",
                     textTransform: "uppercase",
                     cursor: sendMutation.isPending ? "not-allowed" : "pointer",
-                    transition: "background 0.2s ease, transform 0.1s ease",
+                    transition: "background 0.2s ease",
                   }}
-                  onMouseEnter={(e) => { if (!sendMutation.isPending) (e.currentTarget as HTMLButtonElement).style.background = "oklch(0.52 0.07 155)"; }}
-                  onMouseLeave={(e) => { if (!sendMutation.isPending) (e.currentTarget as HTMLButtonElement).style.background = "oklch(0.62 0.07 155)"; }}
-                  onMouseDown={(e) => { (e.currentTarget as HTMLButtonElement).style.transform = "scale(0.97)"; }}
-                  onMouseUp={(e) => { (e.currentTarget as HTMLButtonElement).style.transform = "scale(1)"; }}
                 >
-                  {sendMutation.isPending ? "Sending…" : "Send Message"}
+                  {sendMutation.isPending ? "Sending..." : "Send Message"}
                 </button>
 
                 <p style={{ fontFamily: "'Lato', sans-serif", fontSize: "0.75rem", color: "oklch(0.65 0.01 80)", textAlign: "center", lineHeight: 1.5 }}>

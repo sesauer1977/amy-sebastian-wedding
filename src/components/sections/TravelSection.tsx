@@ -1,6 +1,7 @@
 /**
  * TravelSection — Comprehensive travel directions for international and UK guests
  * Design: Timeless Ivory & Sage
+ * Note: NO em dashes anywhere in copy
  */
 import { useState } from "react";
 
@@ -11,7 +12,7 @@ const travelContent = [
     id: "overseas",
     label: "From Overseas",
     icon: "✈️",
-    intro: "The closest major international airport is Edinburgh Airport (EDI), which has excellent connections from across Europe, North America, and beyond. From Edinburgh, the venue is approximately 35–40 miles east.",
+    intro: "The closest major international airport is Edinburgh Airport (EDI), which has excellent connections from across Europe, North America, and beyond. From Edinburgh, the venue is approximately 35 to 40 miles east.",
     steps: [
       {
         title: "Fly to Edinburgh Airport (EDI)",
@@ -19,15 +20,15 @@ const travelContent = [
       },
       {
         title: "Edinburgh Airport to North Berwick",
-        detail: "The most convenient option from the airport is a taxi or private hire car directly to your accommodation (approximately 45–60 minutes, around £50–70). Alternatively, take the Edinburgh Tram from the airport to Edinburgh Waverley station (30 min), then the ScotRail train to North Berwick (33 min, trains run roughly every 30 minutes).",
+        detail: "The most convenient option from the airport is a taxi or private hire car directly to your accommodation (approximately 45 to 60 minutes, around £50 to £70). Alternatively, take the Edinburgh Tram from the airport to Edinburgh Waverley station (30 min), then the ScotRail train to North Berwick (33 min, trains run roughly every 30 minutes).",
       },
       {
         title: "From North Berwick to Archerfield",
-        detail: "Archerfield is approximately 5 miles from North Berwick. A local taxi takes around 10–12 minutes. You can also hire a car at Edinburgh Airport for full flexibility throughout the weekend.",
+        detail: "Archerfield is approximately 5 miles from North Berwick. A local taxi takes around 10 to 12 minutes. You can also hire a car at Edinburgh Airport for full flexibility throughout the weekend.",
       },
       {
         title: "Alternative: Glasgow Airport (GLA)",
-        detail: "Glasgow Airport is also an option, approximately 80 miles from the venue (1.5–2 hours by road). Glasgow has more transatlantic connections. From Glasgow, a hire car or taxi to the venue is recommended.",
+        detail: "Glasgow Airport is also an option, approximately 80 miles from the venue (1.5 to 2 hours by road). Glasgow has more transatlantic connections. From Glasgow, a hire car or taxi to the venue is recommended.",
       },
     ],
   },
@@ -47,7 +48,7 @@ const travelContent = [
       },
       {
         title: "From North Berwick to Archerfield",
-        detail: "From North Berwick station, take a local taxi to Archerfield (approximately 10–12 minutes, around £10–15). Local taxi firms include North Berwick Taxis: +44 (0) 1620 893 000.",
+        detail: "From North Berwick station, take a local taxi to Archerfield (approximately 10 to 12 minutes, around £10 to £15). Local taxi firms include North Berwick Taxis: +44 (0) 1620 893 000.",
       },
       {
         title: "From Other UK Cities",
@@ -62,7 +63,7 @@ const travelContent = [
     intro: "Archerfield is located on the A198 between Gullane and North Berwick in East Lothian. The postcode for navigation is EH39 5HU.",
     steps: [
       {
-        title: "From Edinburgh (35 miles, ~45 min)",
+        title: "From Edinburgh (35 miles, approx. 45 min)",
         detail: "Head east on the A1 towards Berwick-upon-Tweed. Exit at the Bankton Junction onto the A198 towards North Berwick. Continue through Aberlady and Gullane. Archerfield is signposted on the left, approximately 2 miles past Gullane.",
       },
       {
@@ -70,7 +71,7 @@ const travelContent = [
         detail: "Travelling south on the A1, take the A198 exit towards North Berwick. Follow the A198 through Aberlady and Gullane. Archerfield is on the right, approximately 2 miles past Gullane.",
       },
       {
-        title: "From Glasgow (~80 miles, ~1.5 hrs)",
+        title: "From Glasgow (approx. 80 miles, 1.5 hrs)",
         detail: "Take the M8 east towards Edinburgh, then join the A720 Edinburgh City Bypass heading east. Continue onto the A1 eastbound and exit onto the A198 towards North Berwick.",
       },
       {
@@ -87,15 +88,15 @@ const travelContent = [
     steps: [
       {
         title: "From Edinburgh Airport",
-        detail: "A taxi from Edinburgh Airport to Archerfield costs approximately £50–70 and takes 45–60 minutes depending on traffic. Pre-book with a reputable firm such as Central Taxis Edinburgh (+44 131 229 2468) or City Cabs (+44 131 228 1211).",
+        detail: "A taxi from Edinburgh Airport to Archerfield costs approximately £50 to £70 and takes 45 to 60 minutes depending on traffic. Pre-book with a reputable firm such as Central Taxis Edinburgh (+44 131 229 2468) or City Cabs (+44 131 228 1211).",
       },
       {
         title: "From Edinburgh City Centre",
-        detail: "A taxi from Edinburgh city centre to Archerfield costs approximately £40–55 and takes around 40–50 minutes. Uber is also available in Edinburgh.",
+        detail: "A taxi from Edinburgh city centre to Archerfield costs approximately £40 to £55 and takes around 40 to 50 minutes. Uber is also available in Edinburgh.",
       },
       {
         title: "Local North Berwick Taxis",
-        detail: "For shorter journeys in the area (e.g., North Berwick station to Archerfield), local taxis are available. North Berwick Taxis: +44 (0) 1620 893 000.",
+        detail: "For shorter journeys in the area (e.g. North Berwick station to Archerfield), local taxis are available. North Berwick Taxis: +44 (0) 1620 893 000.",
       },
       {
         title: "Private Transfers",
@@ -119,7 +120,6 @@ export default function TravelSection() {
       }}
     >
       <div style={{ maxWidth: "900px", margin: "0 auto" }}>
-        {/* Section header */}
         <div className="fade-in-up" style={{ textAlign: "center", marginBottom: "3rem" }}>
           <p
             style={{
@@ -155,7 +155,7 @@ export default function TravelSection() {
               lineHeight: 1.7,
             }}
           >
-            Archerfield is in East Lothian, Scotland — easily reachable from Edinburgh and well-connected 
+            Archerfield is in East Lothian, Scotland. It is easily reachable from Edinburgh and well-connected
             to the rest of the UK and beyond. Select your travel method below.
           </p>
         </div>
@@ -197,7 +197,7 @@ export default function TravelSection() {
                 lineHeight: 1.5,
               }}
             >
-              Archerfield, Golf Green – Dirleton<br />
+              Archerfield, Golf Green, Dirleton<br />
               East Lothian, EH39 5HU
             </p>
           </div>
@@ -216,11 +216,10 @@ export default function TravelSection() {
               padding: "0.6rem 1.25rem",
               borderRadius: "0.4rem",
               textDecoration: "none",
-              transition: "background 0.2s ease",
               whiteSpace: "nowrap",
             }}
           >
-            Open in Maps →
+            Open in Maps
           </a>
         </div>
 

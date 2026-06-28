@@ -1,6 +1,7 @@
 /**
  * ScheduleSection — Weekend schedule for the wedding
  * Design: Timeless Ivory & Sage
+ * Note: NO em dashes anywhere in copy
  */
 
 const SectionDivider = ({ label }: { label: string }) => (
@@ -40,14 +41,20 @@ const saturdayEvents: EventItem[] = [
   {
     time: "2:00 pm",
     title: "Wedding Ceremony",
-    description: "Our Lady Star of the Sea, Law Road, North Berwick EH39 4PN — a beautiful Catholic church overlooking the town, founded in 1879.",
+    description: "Our Lady Star of the Sea, Law Road, North Berwick EH39 4PN. A beautiful Catholic church overlooking the town, founded in 1879.",
     icon: "⛪",
   },
   {
-    time: "Evening",
-    title: "Wedding Reception",
-    description: "The Waterfront at Archerfield — our coastal reception venue on the Archerfield Estate, Dirleton, East Lothian EH39 5HU. Dinner, dancing, and celebration with the people we love most.",
+    time: "3:30 pm",
+    title: "Drinks and Canapes",
+    description: "We head straight to The Waterfront at Archerfield after the ceremony. Join us for drinks and canapes as we celebrate together on the East Lothian coast.",
     icon: "🥂",
+  },
+  {
+    time: "7:00 pm",
+    title: "Wedding Dinner",
+    description: "Dinner is served at The Waterfront, Archerfield Estate, Dirleton, East Lothian EH39 5HU. An evening of food, dancing, and celebration with the people we love most.",
+    icon: "🍽",
   },
 ];
 
@@ -61,7 +68,7 @@ const sundayEvents: EventItem[] = [
   {
     time: "After breakfast",
     title: "Farewell",
-    description: "Safe travels home — thank you for being part of our day.",
+    description: "Safe travels home. Thank you for being part of our day.",
     icon: "✈️",
   },
 ];
@@ -76,7 +83,6 @@ const EventCard = ({ event, delay }: { event: EventItem; delay: number }) => (
       animationDelay: `${delay}s`,
     }}
   >
-    {/* Timeline dot */}
     <div
       style={{
         display: "flex",
@@ -104,7 +110,6 @@ const EventCard = ({ event, delay }: { event: EventItem; delay: number }) => (
       </div>
     </div>
 
-    {/* Content */}
     <div style={{ paddingBottom: "2rem" }}>
       <div
         style={{
@@ -157,7 +162,6 @@ export default function ScheduleSection() {
       }}
     >
       <div style={{ maxWidth: "800px", margin: "0 auto" }}>
-        {/* Section header */}
         <div className="fade-in-up" style={{ textAlign: "center", marginBottom: "4rem" }}>
           <p
             style={{
@@ -197,7 +201,6 @@ export default function ScheduleSection() {
           </p>
         </div>
 
-        {/* Saturday */}
         <div className="fade-in-up">
           <SectionDivider label="Saturday, 8 May 2027" />
           <div>
@@ -207,7 +210,6 @@ export default function ScheduleSection() {
           </div>
         </div>
 
-        {/* Sunday */}
         <div className="fade-in-up" style={{ marginTop: "1rem" }}>
           <SectionDivider label="Sunday, 9 May 2027" />
           <div>
