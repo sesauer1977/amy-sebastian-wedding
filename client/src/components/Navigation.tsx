@@ -77,7 +77,7 @@ export default function Navigation() {
             style={{ display: "flex", alignItems: "center", gap: "0.5rem", textDecoration: "none", flexShrink: 0 }}
           >
             <img
-              src="https://raw.githubusercontent.com/sesauer1977/amy-sebastian-wedding/main/public/images/logo-monogram.png"
+              src="https://raw.githubusercontent.com/sesauer1977/amy-sebastian-wedding/main/public/images/logo-monogram-v2.png"
               alt="A&S monogram"
               style={{ width: "28px", height: "28px" }}
             />
