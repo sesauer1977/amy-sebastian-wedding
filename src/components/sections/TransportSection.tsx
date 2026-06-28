@@ -48,15 +48,15 @@ const transportCards = [
     noteBg: "oklch(0.82 0.05 155)",
   },
   {
-    icon: "🚕",
+    icon: "🚐",
     time: "Saturday evening, throughout the night",
-    title: "Taxis on Standby",
+    title: "Cars and Minibuses on Standby",
     subtitle: "For all guests",
     colour: "oklch(0.93 0.025 15 / 0.4)",
     textColour: "oklch(0.28 0.06 155)",
     subtitleColour: "oklch(0.62 0.08 15)",
     bodyColour: "oklch(0.45 0.02 80)",
-    body: "We will have taxis on standby throughout the evening to take guests from Archerfield back to North Berwick and the surrounding area. There is no need to pre-book a taxi for the end of the night. Simply let a member of the team know when you are ready to leave and a car will be arranged for you.",
+    body: "Cars and minibuses will be on standby throughout the evening to shuttle guests from Archerfield to North Berwick town, the surrounding area, and North Berwick train station. There is no need to pre-book. Simply let a member of the team know when you are ready to leave and a vehicle will be arranged for you.",
     note: "For all guests",
     noteColour: "oklch(0.62 0.08 15)",
     noteBg: "oklch(0.88 0.04 15)",
@@ -154,6 +154,33 @@ export default function TransportSection() {
               </div>
             </div>
           ))}
+        </div>
+
+        {/* Train times info */}
+        <div
+          className="fade-in-up"
+          style={{
+            marginTop: "1.25rem",
+            background: "oklch(0.93 0.03 155 / 0.3)",
+            border: "1px solid oklch(0.82 0.05 155)",
+            borderRadius: "0.5rem",
+            padding: "1.5rem 2rem",
+            display: "flex",
+            gap: "1rem",
+            alignItems: "flex-start",
+          }}
+        >
+          <span style={{ fontSize: "1.3rem", flexShrink: 0 }}>🚂</span>
+          <div>
+            <p style={{ fontFamily: "'Lato', sans-serif", fontSize: "0.65rem", fontWeight: 700, letterSpacing: "0.15em", textTransform: "uppercase", color: "oklch(0.62 0.07 155)", marginBottom: "0.3rem" }}>
+              Last Trains from North Berwick to Edinburgh (Saturday)
+            </p>
+            <p style={{ fontFamily: "'Lato', sans-serif", fontSize: "0.88rem", color: "oklch(0.35 0.01 80)", lineHeight: 1.7, margin: 0 }}>
+              The last ScotRail service from North Berwick to Edinburgh Waverley on a Saturday departs at approximately <strong style={{ color: "oklch(0.28 0.06 155)" }}>22:24</strong>, arriving Edinburgh Waverley at around <strong style={{ color: "oklch(0.28 0.06 155)" }}>22:56</strong>. Journey time is approximately 33 minutes. We recommend checking the live timetable at{" "}
+              <a href="https://www.scotrail.co.uk" target="_blank" rel="noopener noreferrer" style={{ color: "oklch(0.52 0.09 155)", fontWeight: 700, textDecoration: "none" }}>scotrail.co.uk</a>{" "}
+              closer to the date, as times may vary. Our shuttles will ensure you reach the station in good time.
+            </p>
+          </div>
         </div>
 
         {/* Summary note */}
