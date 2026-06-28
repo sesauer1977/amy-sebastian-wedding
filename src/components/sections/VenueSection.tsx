@@ -63,7 +63,7 @@ export default function VenueSection() {
             <div
               style={{
                 height: "240px",
-                backgroundImage: `url('${GITHUB_IMAGES}/hero-church.jpg')`,
+                backgroundImage: `url('${GITHUB_IMAGES}/hero-church-v2.jpg')`,
                 backgroundSize: "cover",
                 backgroundPosition: "center",
                 position: "relative",
@@ -182,7 +182,7 @@ export default function VenueSection() {
             <div
               style={{
                 height: "240px",
-                backgroundImage: `url('${GITHUB_IMAGES}/hero-venue.jpg')`,
+                backgroundImage: `url('${GITHUB_IMAGES}/hero-venue-v2.jpg')`,
                 backgroundSize: "cover",
                 backgroundPosition: "center",
                 position: "relative",
