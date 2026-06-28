@@ -13,6 +13,7 @@ import AccommodationSection from "@/components/sections/AccommodationSection";
 import TravelSection from "@/components/sections/TravelSection";
 import GuestInfoSection from "@/components/sections/GuestInfoSection";
 import ContactSection from "@/components/sections/ContactSection";
+import ScottishTriviaSection from "@/components/sections/ScottishTriviaSection";
 import FooterSection from "@/components/sections/FooterSection";
 
 export default function Home() {
@@ -44,6 +45,7 @@ export default function Home() {
       <AccommodationSection />
       <TravelSection />
       <GuestInfoSection />
+      <ScottishTriviaSection />
       <ContactSection />
       <FooterSection />
     </div>

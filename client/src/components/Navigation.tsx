@@ -11,6 +11,7 @@ const links = [
   { label: "Stay", href: "#accommodation" },
   { label: "Getting Here", href: "#travel" },
   { label: "Guest Info", href: "#guest-info" },
+  { label: "Scotland", href: "#scotland" },
   { label: "Contact", href: "#contact" },
 ];
 
