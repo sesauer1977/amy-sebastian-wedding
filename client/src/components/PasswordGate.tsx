@@ -7,6 +7,7 @@ import { useState, useEffect, type ReactNode } from "react";
 
 const CORRECT_PASSWORD = "atlast";
 const STORAGE_KEY = "wedding_auth_amy_sebastian";
+const GH_LOGO = "https://raw.githubusercontent.com/sesauer1977/amy-sebastian-wedding/main/public/images/logo-monogram-v2.png";
 
 interface PasswordGateProps {
   children: ReactNode;
@@ -18,6 +19,7 @@ export default function PasswordGate({ children }: PasswordGateProps) {
   const [error, setError] = useState(false);
   const [shaking, setShaking] = useState(false);
   const [visible, setVisible] = useState(false);
+  const isDe = typeof window !== "undefined" && window.location.pathname.startsWith("/de");
 
   useEffect(() => {
     const stored = sessionStorage.getItem(STORAGE_KEY);
@@ -133,8 +135,11 @@ export default function PasswordGate({ children }: PasswordGateProps) {
             lineHeight: 1.6,
           }}
         >
-          This website is for our guests only.<br />
-          Please enter the password from your save-the-date card.
+          {isDe ? (
+            <>Diese Website ist nur für unsere Gäste.<br />Bitte gib das Passwort von Deiner Save-the-Date-Karte ein.</>
+          ) : (
+            <>This website is for our guests only.<br />Please enter the password from your save-the-date card.</>
+          )}
         </p>
 
         {/* Password form */}
@@ -148,7 +153,7 @@ export default function PasswordGate({ children }: PasswordGateProps) {
               type="password"
               value={password}
               onChange={(e) => setPassword(e.target.value)}
-              placeholder="Enter password"
+              placeholder={isDe ? "Passwort eingeben" : "Enter password"}
               autoFocus
               style={{
                 width: "100%",
@@ -175,7 +180,7 @@ export default function PasswordGate({ children }: PasswordGateProps) {
                   fontFamily: "'Lato', sans-serif",
                 }}
               >
-                Incorrect password. Please try again.
+                {isDe ? "Falsches Passwort. Bitte versuche es erneut." : "Incorrect password. Please try again."}
               </p>
             )}
           </div>
@@ -211,7 +216,7 @@ export default function PasswordGate({ children }: PasswordGateProps) {
               (e.target as HTMLButtonElement).style.transform = "scale(1)";
             }}
           >
-            Enter
+            {isDe ? "Weiter" : "Enter"}
           </button>
         </form>
       </div>

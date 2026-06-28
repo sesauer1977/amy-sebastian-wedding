@@ -123,6 +123,12 @@ export default function Navigation() {
                 {link.label}
               </a>
             ))}
+            {/* Language toggle */}
+            <div style={{ display: "flex", alignItems: "center", gap: "0.35rem", marginLeft: "0.25rem", borderLeft: `1px solid ${hasBg ? "oklch(0.88 0.02 100)" : "oklch(0.75 0.01 85 / 0.5)"}`, paddingLeft: "0.75rem" }}>
+              <span style={{ fontFamily: "'Lato', sans-serif", fontSize: "0.68rem", fontWeight: 700, color: "oklch(0.62 0.07 155)", borderBottom: "1.5px solid oklch(0.62 0.07 155)" }}>EN</span>
+              <span style={{ color: hasBg ? "oklch(0.75 0.01 80)" : "oklch(0.65 0.01 85)", fontSize: "0.65rem" }}>|</span>
+              <a href="/de" style={{ fontFamily: "'Lato', sans-serif", fontSize: "0.68rem", fontWeight: 700, color: hasBg ? "oklch(0.55 0.01 80)" : "oklch(0.75 0.01 85)", textDecoration: "none" }}>DE</a>
+            </div>
           </nav>
 
           {/* Hamburger button — CSS shows/hides */}
@@ -158,17 +164,17 @@ export default function Navigation() {
           </button>
         </div>
 
-        {/* Mobile dropdown */}
-        {menuOpen && (
-          <div
-            style={{
-              background: "oklch(0.97 0.012 85 / 0.98)",
-              backdropFilter: "blur(12px)",
-              borderTop: "1px solid oklch(0.88 0.02 100)",
-              padding: "0.5rem 1.25rem 1.25rem",
-            }}
-          >
-            {links.map((link) => (
+          {/* Mobile dropdown */}
+          {menuOpen && (
+            <div
+              style={{
+                background: "oklch(0.97 0.012 85 / 0.98)",
+                backdropFilter: "blur(12px)",
+                borderTop: "1px solid oklch(0.88 0.02 100)",
+                padding: "0.5rem 1.25rem 1.25rem",
+              }}
+            >
+              {links.map((link) => (
               <a
                 key={link.href}
                 href={link.href}
@@ -189,6 +195,7 @@ export default function Navigation() {
                 {link.label}
               </a>
             ))}
+              <a href="/de" style={{ display: "block", padding: "0.85rem 0", fontFamily: "'Lato', sans-serif", fontSize: "0.9rem", fontWeight: 700, letterSpacing: "0.1em", textTransform: "uppercase", color: "oklch(0.62 0.07 155)", textDecoration: "none", borderBottom: "1px solid oklch(0.92 0.01 100)" }}>🇩🇪 Deutsch</a>
           </div>
         )}
       </header>
