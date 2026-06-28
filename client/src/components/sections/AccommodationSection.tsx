@@ -190,7 +190,7 @@ export default function AccommodationSection() {
           <div
             style={{
               minHeight: "260px",
-              backgroundImage: `url('${GH}/archerfield-house-v1.jpg')`,
+              backgroundImage: `url('${GH}/archerfield-house-v2.jpg')`,
               backgroundSize: "cover",
               backgroundPosition: "center",
             }}
