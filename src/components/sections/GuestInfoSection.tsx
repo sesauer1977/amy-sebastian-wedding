@@ -11,7 +11,7 @@ const infoCards = [
   {
     icon: "👶",
     title: "Children Welcome",
-    body: "Your children are warmly welcome to join us for the celebration. The Waterfront venue is fully gated and has ample outdoor space for children to run around. Beach access is available and the beach is enclosed by high fencing, so little ones can explore safely. We want our day to be a joy for the whole family.",
+    body: "Your children are warmly welcome to join us for the celebration. The Waterfront venue is fully gated with ample outdoor space, beach access, and high fencing for safety. While all parents remain responsible for their children, we will have supervised children's activities throughout the day including games, face painting, and kids' movies. We want our day to be a joy for the whole family.",
   },
   {
     icon: "🍽",

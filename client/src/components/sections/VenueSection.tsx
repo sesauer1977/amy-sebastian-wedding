@@ -246,8 +246,7 @@ export default function VenueSection() {
                 }}
               >
                 Our reception will be held at The Waterfront, a dedicated coastal wedding venue set within
-                the 550-acre Archerfield Estate, just a few miles from North Berwick. An evening of dinner,
-                dancing, and celebration with the people we love most.
+                the 550-acre Archerfield Estate, just a few miles from North Berwick.
               </p>
               <div
                 style={{
