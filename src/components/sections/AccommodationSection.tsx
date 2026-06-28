@@ -335,12 +335,15 @@ export default function AccommodationSection() {
 
         {/* Nearby */}
         <div className="fade-in-up">
-          <div style={{ display: "flex", alignItems: "center", gap: "1rem", marginBottom: "1.5rem" }}>
+          <div style={{ display: "flex", alignItems: "center", gap: "1rem", marginBottom: "1rem" }}>
             <h3 style={{ fontFamily: "'Cormorant Garamond', serif", fontSize: "1.6rem", fontWeight: 500, color: "oklch(0.28 0.06 155)", whiteSpace: "nowrap" }}>
               Nearby Accommodation
             </h3>
             <div style={{ flex: 1, height: "1px", background: "oklch(0.88 0.02 100)" }} />
           </div>
+          <p style={{ fontFamily: "'Lato', sans-serif", fontSize: "0.9rem", color: "oklch(0.45 0.02 80)", lineHeight: 1.75, marginBottom: "1.5rem" }}>
+            North Berwick is just a 10-minute drive from Archerfield and has a wide range of accommodation to suit every budget and style. From world-class golf resorts and boutique hotels to cosy B&Bs, self-catering cottages, Airbnbs, and caravan parks right on the coast, there is something for everyone. Even Edinburgh, with its huge choice of hotels at all price points, is only around an hour by taxi.
+          </p>
 
           <div style={{ display: "grid", gridTemplateColumns: "repeat(auto-fill, minmax(min(100%, 480px), 1fr))", gap: "1rem", marginBottom: "1.5rem" }}>
             {displayedNearby.map((place) => (
