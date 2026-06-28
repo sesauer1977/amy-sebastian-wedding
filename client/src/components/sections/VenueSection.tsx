@@ -208,7 +208,7 @@ export default function VenueSection() {
                     color: "oklch(0.82 0.05 155)",
                   }}
                 >
-                  Reception · Evening
+                  Reception · From 3:30 pm
                 </span>
               </div>
             </div>
