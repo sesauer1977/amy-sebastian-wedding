@@ -1,7 +1,10 @@
 /**
  * VenueSection — Ceremony & Reception venue details
  * Design: Timeless Ivory & Sage
+ * Note: NO em dashes anywhere in copy
  */
+
+const GITHUB_IMAGES = "https://raw.githubusercontent.com/sesauer1977/amy-sebastian-wedding/main/public/images";
 
 export default function VenueSection() {
   return (
@@ -14,7 +17,6 @@ export default function VenueSection() {
       }}
     >
       <div style={{ maxWidth: "1100px", margin: "0 auto" }}>
-        {/* Section header */}
         <div className="fade-in-up" style={{ textAlign: "center", marginBottom: "4rem" }}>
           <p
             style={{
@@ -41,7 +43,6 @@ export default function VenueSection() {
           </h2>
         </div>
 
-        {/* Two-column venue cards */}
         <div
           style={{
             display: "grid",
@@ -62,7 +63,7 @@ export default function VenueSection() {
             <div
               style={{
                 height: "240px",
-                backgroundImage: "url('https://raw.githubusercontent.com/sesauer1977/amy-sebastian-wedding/main/public/images/hero-church.jpg')",
+                backgroundImage: `url('${GITHUB_IMAGES}/hero-church.jpg')`,
                 backgroundSize: "cover",
                 backgroundPosition: "center",
                 position: "relative",
@@ -125,7 +126,7 @@ export default function VenueSection() {
                   marginBottom: "1.25rem",
                 }}
               >
-                Our wedding ceremony will take place at this beautiful Catholic church, founded in 1879. 
+                Our wedding ceremony will take place at this beautiful Catholic church, founded in 1879.
                 Nestled in the heart of North Berwick, just a short distance from the sea.
               </p>
               <div
@@ -163,7 +164,7 @@ export default function VenueSection() {
                   paddingBottom: "1px",
                 }}
               >
-                Visit Website →
+                Visit Website
               </a>
             </div>
           </div>
@@ -181,7 +182,7 @@ export default function VenueSection() {
             <div
               style={{
                 height: "240px",
-                backgroundImage: "url('https://raw.githubusercontent.com/sesauer1977/amy-sebastian-wedding/main/public/images/hero-venue.jpg')",
+                backgroundImage: `url('${GITHUB_IMAGES}/hero-venue.jpg')`,
                 backgroundSize: "cover",
                 backgroundPosition: "center",
                 position: "relative",
@@ -241,13 +242,37 @@ export default function VenueSection() {
                   fontSize: "0.9rem",
                   color: "oklch(0.45 0.02 80)",
                   lineHeight: 1.7,
-                  marginBottom: "1.25rem",
+                  marginBottom: "1rem",
                 }}
               >
-                Our reception will be held at The Waterfront — Archerfield's stunning contemporary coastal venue, 
-                set within a 550-acre private estate just a few miles from North Berwick. An evening of dinner, 
+                Our reception will be held at The Waterfront, a dedicated coastal wedding venue set within
+                the 550-acre Archerfield Estate, just a few miles from North Berwick. An evening of dinner,
                 dancing, and celebration with the people we love most.
               </p>
+              <div
+                style={{
+                  background: "oklch(0.93 0.03 155)",
+                  borderRadius: "0.4rem",
+                  padding: "0.75rem 1rem",
+                  marginBottom: "1.25rem",
+                  display: "flex",
+                  gap: "0.6rem",
+                  alignItems: "flex-start",
+                }}
+              >
+                <span style={{ fontSize: "1rem", flexShrink: 0, marginTop: "0.1rem" }}>👶</span>
+                <p
+                  style={{
+                    fontFamily: "'Lato', sans-serif",
+                    fontSize: "0.82rem",
+                    color: "oklch(0.35 0.01 80)",
+                    lineHeight: 1.6,
+                    margin: 0,
+                  }}
+                >
+                  <strong style={{ color: "oklch(0.28 0.06 155)" }}>Great for families:</strong> The Waterfront area is fully gated and separate from the rest of the estate. There is ample outdoor space for children to run around, and beach access is available. The beach itself is enclosed by high fencing, making it completely safe for little ones.
+                </p>
+              </div>
               <div
                 style={{
                   background: "oklch(0.93 0.03 155)",
@@ -264,7 +289,7 @@ export default function VenueSection() {
                     lineHeight: 1.6,
                   }}
                 >
-                  <strong style={{ color: "oklch(0.28 0.06 155)" }}>Address:</strong> Archerfield, Golf Green – Dirleton, East Lothian, EH39 5HU
+                  <strong style={{ color: "oklch(0.28 0.06 155)" }}>Address:</strong> Archerfield, Golf Green, Dirleton, East Lothian, EH39 5HU
                   <br />
                   <strong style={{ color: "oklch(0.28 0.06 155)" }}>Tel:</strong> +44 (0) 1620 897050
                 </p>
@@ -285,7 +310,7 @@ export default function VenueSection() {
                   paddingBottom: "1px",
                 }}
               >
-                Visit Website →
+                Visit Website
               </a>
             </div>
           </div>
@@ -325,9 +350,9 @@ export default function VenueSection() {
                 lineHeight: 1.7,
               }}
             >
-              On Sunday morning, those who wish are warmly invited to join us for a relaxed breakfast at the 
-              <strong style={{ color: "oklch(0.92 0.03 155)" }}> Archerfield Clubhouse</strong>. 
-              A lovely way to round off the weekend before everyone heads home. No formalities — just good food and good company.
+              On Sunday morning, those who wish are warmly invited to join us for a relaxed breakfast at the{" "}
+              <strong style={{ color: "oklch(0.92 0.03 155)" }}>Archerfield Clubhouse</strong>.
+              A lovely way to round off the weekend before everyone heads home. No formalities, just good food and good company.
             </p>
           </div>
         </div>
