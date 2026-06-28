@@ -20,7 +20,7 @@ const triviaCards = [
     emoji: "💃",
     title: "The Ceilidh",
     subtitle: "Scotland's Greatest Party Tradition",
-    image: `${GH}/trad-ceilidh.jpg`,
+    image: `${GH}/trad-ceilidh-v2.jpg`,
     body: "A ceilidh (pronounced 'kay-lee') is a traditional Scottish social gathering with folk music and dancing. At a wedding ceilidh, a caller shouts the steps so everyone can join in, even if you have never danced before. Expect the Dashing White Sergeant, Strip the Willow, and the Gay Gordons. No experience required, just enthusiasm and comfortable shoes.",
     colour: "oklch(0.93 0.03 155)",
     accent: "oklch(0.52 0.09 155)",
