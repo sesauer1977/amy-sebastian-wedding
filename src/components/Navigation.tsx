@@ -32,6 +32,8 @@ export default function Navigation() {
   };
 
   const hasBg = scrolled || menuOpen;
+  const onHero = "oklch(0.97 0.01 85)";
+  const onBg = "oklch(0.28 0.06 155)";
 
   return (
     <>
@@ -84,7 +86,7 @@ export default function Navigation() {
                 fontFamily: "'Cormorant Garamond', serif",
                 fontSize: "1rem",
                 fontWeight: 500,
-                color: hasBg ? "oklch(0.28 0.06 155)" : "oklch(0.97 0.01 85)",
+                color: hasBg ? onBg : onHero,
                 letterSpacing: "0.02em",
                 transition: "color 0.3s ease",
                 whiteSpace: "nowrap",
@@ -107,13 +109,13 @@ export default function Navigation() {
                   fontWeight: 700,
                   letterSpacing: "0.12em",
                   textTransform: "uppercase",
-                  color: hasBg ? "oklch(0.35 0.01 80)" : "oklch(0.95 0.005 85)",
+                  color: hasBg ? "oklch(0.35 0.01 80)" : onHero,
                   textDecoration: "none",
                   transition: "color 0.2s ease",
                   whiteSpace: "nowrap",
                 }}
                 onMouseEnter={(e) => { (e.target as HTMLAnchorElement).style.color = "oklch(0.62 0.07 155)"; }}
-                onMouseLeave={(e) => { (e.target as HTMLAnchorElement).style.color = hasBg ? "oklch(0.35 0.01 80)" : "oklch(0.95 0.005 85)"; }}
+                onMouseLeave={(e) => { (e.target as HTMLAnchorElement).style.color = hasBg ? "oklch(0.35 0.01 80)" : onHero; }}
               >
                 {link.label}
               </a>
@@ -129,7 +131,7 @@ export default function Navigation() {
               border: "none",
               cursor: "pointer",
               padding: "0.5rem",
-              color: hasBg ? "oklch(0.28 0.06 155)" : "oklch(0.97 0.01 85)",
+              color: hasBg ? onBg : onHero,
               alignItems: "center",
               justifyContent: "center",
               transition: "color 0.3s ease",
