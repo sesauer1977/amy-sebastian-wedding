@@ -178,7 +178,7 @@ export default function TransportSection() {
             <p style={{ fontFamily: "'Lato', sans-serif", fontSize: "0.88rem", color: "oklch(0.35 0.01 80)", lineHeight: 1.7, margin: 0 }}>
               The last ScotRail service from North Berwick to Edinburgh Waverley on a Saturday departs at approximately <strong style={{ color: "oklch(0.28 0.06 155)" }}>22:24</strong>, arriving Edinburgh Waverley at around <strong style={{ color: "oklch(0.28 0.06 155)" }}>22:56</strong>. Journey time is approximately 33 minutes. We recommend checking the live timetable at{" "}
               <a href="https://www.scotrail.co.uk" target="_blank" rel="noopener noreferrer" style={{ color: "oklch(0.52 0.09 155)", fontWeight: 700, textDecoration: "none" }}>scotrail.co.uk</a>{" "}
-              closer to the date, as times may vary. Our shuttles will ensure you reach the station in good time.
+              closer to the date, as times may vary.
             </p>
           </div>
         </div>

@@ -89,7 +89,7 @@ export default function TransportSectionDe() {
           <div>
             <p style={{ fontFamily: "'Lato', sans-serif", fontSize: "0.65rem", fontWeight: 700, letterSpacing: "0.15em", textTransform: "uppercase", color: "oklch(0.62 0.07 155)", marginBottom: "0.3rem" }}>Letzte Züge von North Berwick nach Edinburgh (Samstag)</p>
             <p style={{ fontFamily: "'Lato', sans-serif", fontSize: "0.88rem", color: "oklch(0.35 0.01 80)", lineHeight: 1.7, margin: 0 }}>
-              Der letzte ScotRail-Zug von North Berwick nach Edinburgh Waverley an einem Samstag fährt um ca. <strong style={{ color: "oklch(0.28 0.06 155)" }}>22:24 Uhr</strong> ab und kommt um ca. <strong style={{ color: "oklch(0.28 0.06 155)" }}>22:56 Uhr</strong> an. Fahrtzeit ca. 33 Minuten. Bitte den aktuellen Fahrplan auf{" "}<a href="https://www.scotrail.co.uk" target="_blank" rel="noopener noreferrer" style={{ color: "oklch(0.52 0.09 155)", fontWeight: 700, textDecoration: "none" }}>scotrail.co.uk</a>{" "}prüfen. Unsere Fahrten bringen Euch rechtzeitig zum Bahnhof.
+              Der letzte ScotRail-Zug von North Berwick nach Edinburgh Waverley an einem Samstag fährt um ca. <strong style={{ color: "oklch(0.28 0.06 155)" }}>22:24 Uhr</strong> ab und kommt um ca. <strong style={{ color: "oklch(0.28 0.06 155)" }}>22:56 Uhr</strong> an. Fahrtzeit ca. 33 Minuten. Bitte den aktuellen Fahrplan auf{" "}<a href="https://www.scotrail.co.uk" target="_blank" rel="noopener noreferrer" style={{ color: "oklch(0.52 0.09 155)", fontWeight: 700, textDecoration: "none" }}>scotrail.co.uk</a>{" "}prüfen. 
             </p>
           </div>
         </div>
