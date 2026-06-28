@@ -243,7 +243,31 @@ export default function AccommodationSection() {
                 Great for Families
               </p>
               <p style={{ fontFamily: "'Lato', sans-serif", fontSize: "0.88rem", color: "oklch(0.82 0.04 155)", lineHeight: 1.7, margin: 0 }}>
-                All rooms at Archerfield are generously sized and family-friendly. Children under 12 can sleep in their parents' room on z-beds, and multiple z-beds fit easily in each room. Children aged 12 and over count as adults under Archerfield's terms. The lodges are ideal for sharing between families: a 4-bedroom lodge can comfortably accommodate 3 or even 4 families travelling together, making them excellent value.
+                All rooms at Archerfield are generously sized and family-friendly. Children under 12 can sleep in their parents' room on z-beds, and multiple z-beds fit easily in each room. Children aged 12 and over count as adults under Archerfield's terms. The 3-bedroom lodges are ideal for 3 families sharing, and the 4-bedroom lodges for 4 families, making them outstanding value when split between friends.
+              </p>
+            </div>
+          </div>
+
+          {/* Estate shuttle */}
+          <div
+            style={{
+              background: "oklch(0.93 0.03 155 / 0.3)",
+              border: "1px solid oklch(0.82 0.05 155)",
+              borderRadius: "0.5rem",
+              padding: "1.25rem 1.5rem",
+              marginBottom: "1rem",
+              display: "flex",
+              gap: "1rem",
+              alignItems: "flex-start",
+            }}
+          >
+            <span style={{ fontSize: "1.3rem", flexShrink: 0 }}>🚐</span>
+            <div>
+              <p style={{ fontFamily: "'Lato', sans-serif", fontSize: "0.65rem", fontWeight: 700, letterSpacing: "0.15em", textTransform: "uppercase", color: "oklch(0.62 0.07 155)", marginBottom: "0.3rem" }}>
+                Getting Around the Estate
+              </p>
+              <p style={{ fontFamily: "'Lato', sans-serif", fontSize: "0.88rem", color: "oklch(0.35 0.01 80)", lineHeight: 1.7, margin: 0 }}>
+                The pavilion suites and lodges are approximately 1 to 2 miles from The Waterfront reception venue. Archerfield provides a round-the-clock shuttle service across the estate, so you will never need to walk or drive between your accommodation and the wedding venue.
               </p>
             </div>
           </div>
