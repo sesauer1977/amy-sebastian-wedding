@@ -16,13 +16,13 @@ const saturdayEvents = [
   {
     time: "15:30 Uhr",
     title: "Sektempfang und Häppchen",
-    description: "Im Anschluss an die Trauung fahren wir direkt zum The Waterfront in Archerfield. Stoßt mit uns an und genießt den Nachmittag an der Küste von East Lothian.",
+    description: "Im Anschluss an die Trauung geht es weiter zum The Waterfront in Archerfield. Stoßt mit uns an und genießt den Nachmittag an der Küste von East Lothian.",
     icon: "🥂",
   },
   {
-    time: "19:00 Uhr",
+    time: "18:00 Uhr",
     title: "Hochzeitsessen",
-    description: "Das Abendessen wird im The Waterfront, Archerfield Estate, Dirleton, East Lothian EH39 5HU serviert. Ein Abend voller gutem Essen, Tanzen und Feiern.",
+    description: "Im selben Haus erwartet Euch das Abendessen. Ein Abend voller gutem Essen, Tanzen und Feiern mit den Menschen, die uns am meisten bedeuten.",
     icon: "🍽",
   },
 ];

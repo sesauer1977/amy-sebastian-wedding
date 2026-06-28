@@ -47,13 +47,13 @@ const saturdayEvents: EventItem[] = [
   {
     time: "3:30 pm",
     title: "Drinks and Canapes",
-    description: "We head straight to The Waterfront at Archerfield after the ceremony. Join us for drinks and canapes as we celebrate together on the East Lothian coast.",
+    description: "After the ceremony we head straight to The Waterfront in Archerfield. Join us for drinks and canapes as we celebrate on the East Lothian coast.",
     icon: "🥂",
   },
   {
-    time: "7:00 pm",
+    time: "6:00 pm",
     title: "Wedding Dinner",
-    description: "Dinner is served at The Waterfront, Archerfield Estate, Dirleton, East Lothian EH39 5HU. An evening of food, dancing, and celebration with the people we love most.",
+    description: "Dinner is served in the same venue. An evening of food, dancing, and celebration with the people we love most.",
     icon: "🍽",
   },
 ];
