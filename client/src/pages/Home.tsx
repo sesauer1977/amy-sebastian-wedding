@@ -3,7 +3,7 @@
  * Design: Timeless Ivory & Sage
  * Sections: Hero, Countdown, Schedule, Venue, Ceremony, Accommodation, Travel, RSVP Info, Gallery Placeholder
  */
-import { useEffect, useRef, useState } from "react";
+import { useEffect, useRef } from "react";
 import Navigation from "@/components/Navigation";
 import HeroSection from "@/components/sections/HeroSection";
 import CountdownSection from "@/components/sections/CountdownSection";
@@ -12,13 +12,13 @@ import VenueSection from "@/components/sections/VenueSection";
 import AccommodationSection from "@/components/sections/AccommodationSection";
 import TravelSection from "@/components/sections/TravelSection";
 import GuestInfoSection from "@/components/sections/GuestInfoSection";
+import ContactSection from "@/components/sections/ContactSection";
 import FooterSection from "@/components/sections/FooterSection";
 
 export default function Home() {
   const sectionsRef = useRef<NodeListOf<Element> | null>(null);
 
   useEffect(() => {
-    // Scroll-triggered fade-in for all .fade-in-up elements
     const observer = new IntersectionObserver(
       (entries) => {
         entries.forEach((entry) => {
@@ -29,10 +29,8 @@ export default function Home() {
       },
       { threshold: 0.1, rootMargin: "0px 0px -40px 0px" }
     );
-
     sectionsRef.current = document.querySelectorAll(".fade-in-up");
     sectionsRef.current.forEach((el) => observer.observe(el));
-
     return () => observer.disconnect();
   }, []);
 
@@ -46,6 +44,7 @@ export default function Home() {
       <AccommodationSection />
       <TravelSection />
       <GuestInfoSection />
+      <ContactSection />
       <FooterSection />
     </div>
   );

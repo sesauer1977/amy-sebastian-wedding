@@ -10,6 +10,7 @@ const links = [
   { label: "Stay", href: "#accommodation" },
   { label: "Getting Here", href: "#travel" },
   { label: "Guest Info", href: "#guest-info" },
+  { label: "Contact", href: "#contact" },
 ];
 
 export default function Navigation() {
