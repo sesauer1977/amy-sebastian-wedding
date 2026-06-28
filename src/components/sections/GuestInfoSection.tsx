@@ -4,7 +4,7 @@
  */
 
 const WHATSAPP_LINK = "https://chat.whatsapp.com/K95KEI4HPru5XbGhzcPa7H?s=hd&p=i&mlu=0&amv=0";
-const WHATSAPP_QR = "https://files.manuscdn.com/user_upload_by_module/session_file/310519663489425504/wNyKvDSwOGrRzNGx.jpg";
+const WHATSAPP_QR = "https://raw.githubusercontent.com/sesauer1977/amy-sebastian-wedding/main/public/images/whatsapp-qr.jpg";
 
 const infoCards = [
   {

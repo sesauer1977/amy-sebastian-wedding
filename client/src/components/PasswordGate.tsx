@@ -78,7 +78,7 @@ export default function PasswordGate({ children }: PasswordGateProps) {
         {/* Monogram */}
         <div style={{ marginBottom: "1.5rem" }}>
           <img
-            src="/manus-storage/logo-monogram_85323894.png"
+            src="https://raw.githubusercontent.com/sesauer1977/amy-sebastian-wedding/main/public/images/logo-monogram.png"
             alt="Amy & Sebastian monogram"
             style={{ width: "80px", height: "80px", margin: "0 auto", display: "block" }}
           />

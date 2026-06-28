@@ -24,7 +24,7 @@ export default function HeroSection() {
         style={{
           position: "absolute",
           inset: 0,
-          backgroundImage: "url('https://files.manuscdn.com/user_upload_by_module/session_file/310519663489425504/JzLbZgrwaHBchZCK.jpg')",
+          backgroundImage: "url('https://raw.githubusercontent.com/sesauer1977/amy-sebastian-wedding/main/public/images/hero-coast.jpg')",
           backgroundSize: "cover",
           backgroundPosition: "center",
           backgroundRepeat: "no-repeat",

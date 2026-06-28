@@ -62,7 +62,7 @@ export default function VenueSection() {
             <div
               style={{
                 height: "240px",
-                backgroundImage: "url('/manus-storage/hero-church_73be4d6e.jpg')",
+                backgroundImage: "url('https://raw.githubusercontent.com/sesauer1977/amy-sebastian-wedding/main/public/images/hero-church.jpg')",
                 backgroundSize: "cover",
                 backgroundPosition: "center",
                 position: "relative",
@@ -181,7 +181,7 @@ export default function VenueSection() {
             <div
               style={{
                 height: "240px",
-                backgroundImage: "url('/manus-storage/hero-venue_818538da.jpg')",
+                backgroundImage: "url('https://raw.githubusercontent.com/sesauer1977/amy-sebastian-wedding/main/public/images/hero-venue.jpg')",
                 backgroundSize: "cover",
                 backgroundPosition: "center",
                 position: "relative",

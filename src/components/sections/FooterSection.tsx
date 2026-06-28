@@ -15,7 +15,7 @@ export default function FooterSection() {
     >
       <div style={{ maxWidth: "600px", margin: "0 auto" }}>
         <img
-          src="https://files.manuscdn.com/user_upload_by_module/session_file/310519663489425504/qVgRIAYKJGvLZFPv.png"
+          src="https://raw.githubusercontent.com/sesauer1977/amy-sebastian-wedding/main/public/images/logo-monogram.png"
           alt="Amy & Sebastian monogram"
           style={{ width: "48px", height: "48px", margin: "0 auto 1rem", display: "block", opacity: 0.85 }}
         />

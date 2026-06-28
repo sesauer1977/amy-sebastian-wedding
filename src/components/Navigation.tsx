@@ -69,7 +69,7 @@ export default function Navigation() {
           }}
         >
           <img
-            src="https://files.manuscdn.com/user_upload_by_module/session_file/310519663489425504/qVgRIAYKJGvLZFPv.png"
+            src="https://raw.githubusercontent.com/sesauer1977/amy-sebastian-wedding/main/public/images/logo-monogram.png"
             alt="A&C monogram"
             style={{ width: "32px", height: "32px" }}
           />

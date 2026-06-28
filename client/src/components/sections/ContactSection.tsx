@@ -121,7 +121,7 @@ export default function ContactSection() {
             {/* QR code */}
             <div style={{ display: "flex", justifyContent: "center" }}>
               <img
-                src="/manus-storage/whatsapp-qr_54d08e98.jpg"
+                src="https://raw.githubusercontent.com/sesauer1977/amy-sebastian-wedding/main/public/images/whatsapp-qr.jpg"
                 alt="WhatsApp QR code — Amy & Sebastian Wedding 2027"
                 style={{ width: "160px", height: "160px", borderRadius: "0.5rem", border: "3px solid oklch(0.62 0.07 155 / 0.4)" }}
               />
